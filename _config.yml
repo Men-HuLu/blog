@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Men-HuLu的博客
-subtitle: 学习使我痛苦
-description: 编程,手札
-keywords: 前端js,C#,git,
-author: 闷葫芦
+title: 闷葫芦的手帐
+subtitle: 再微小，也要留下一抹痕迹
+description: 编程
+keywords: JavaScript
+author: 俞敏军
 language: zh-CN
 timezone: 
 
