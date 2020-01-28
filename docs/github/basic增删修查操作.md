@@ -1,0 +1,50 @@
+---
+title: basic增删修查操作
+date: "2019-4-6"
+---
+
+### 工作区到暂存区操作
+###### 代码操作无疑是增删修查，工作区到暂存区操作git代码操作也是同理也是增删修查
+
+#### 1.查
+```
+git status      //c查看文件状态
+```
+
+#### 2.增
+
+```
+git add index.html      //添加指定文件
+git add *               //添加所有文件
+git add *.css           //添加所有匹配的文件
+
+
+以下是新增也是修改
+git add -A              //提交所有变化
+git add -u              //已经被跟踪的文件保存到暂存区
+git add .               //提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+```
+
+#### 3.删
+
+```
+git rm readme           //删除指定文件
+git rm --cached [file]  //停止追踪指定文件，但该文件会保留在工作区
+```
+
+
+#### 4.修
+1.文件内容修改
+```
+git add -A              //提交所有变化
+git add -u              //已经被跟踪的文件保存到暂存区
+git add .               //提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+```
+2.文件名修改
+```
+mv readme readme.md
+git add readme.md
+git rm readme
+等于
+git mv readme readme.md
+```

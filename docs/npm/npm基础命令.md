@@ -1,0 +1,93 @@
+---
+title: npm基础命令
+date: "2019-6-5"
+---
+
+##### 安装包
+```
+npm install lodash
+npm install lodash@版本号
+```
+##### 更新包
+```
+npm update
+```
+##### 卸载包
+```
+//
+npm uninstall lodash
+//从依赖包中删除
+npm uninstall --save lodash
+```
+##### 搜索包
+```
+npm search lodash
+```
+##### 发布模块
+```
+npm publish lodash
+```
+##### 撤销发布的代码
+```
+npm unpublish  <package>@<version>
+```
+#####  清空本地缓存
+```
+npm cache clear： 清空npm本地缓存（相同版本号发布新版本时）
+```
+
+
+**安装全局包**
+```
+//将其作为一个命令行工具，那么你应该将其安装到全局
+
+npm install -g jshint
+npm update -g jshint
+npm uninstall -g jshint
+//-g    全局参数
+```
+
+**帮助命令**
+```
+npm [help | -h]：查看所有指令
+npm [list | -l] ：查看所有指令使用方法
+npm <指令> -h：查看具体某条命令的帮助信息
+npm help <指令>：浏览器打开本地的命令帮助文档
+```
+
+**信息查看**
+
+```
+npm list -g 或 npm ls -g：获得全局安装的模块
+npm list  <package>或 npm ls <package>  ：查看模块的版本号
+npm info  <package>：显示包的信息
+```
+
+
+**参数**
+
+```
+-S 或 --save：包被写入到package.json的 dependencies。
+-D 或 --save-dev：包被写入到package.json的 devDependencies。
+-O 或 --save-optional：包被写入到package.json的optionalDependencies
+-B 或 --save-bundle ： 包也将被添加到bundleDependencies。
+-E 或 --save-exact ：会在 package.json 文件指定安装模块的确切版本。
+```
+
+
+
+
+
+**npm设置访问权限**
+```
+npm access public
+npm access restricted
+```
+**npm浏览器打开github网站**
+```
+npm repo lodash
+```
+
+
+参考文档:
+[CLI命令](https://docs.npmjs.com/cli-documentation/)

@@ -1,1 +1,12 @@
+# npm
+package-lock.json
 node_modules
+
+# vscode
+.vscode
+
+# 撰写中
+todo/
+
+# 读书笔记
+notes/

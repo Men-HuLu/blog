@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>委托 事件 反射 枚举 扩展方法 | 闷葫芦博客</title>
+    <meta name="description" content="前端，算法和架构的博客">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.78f28ec0.css" as="style"><link rel="preload" href="/assets/js/app.024d52aa.js" as="script"><link rel="preload" href="/assets/js/2.cabe3d8d.js" as="script"><link rel="preload" href="/assets/js/29.56682f2c.js" as="script"><link rel="prefetch" href="/assets/js/10.f4bcbc3a.js"><link rel="prefetch" href="/assets/js/11.105090f8.js"><link rel="prefetch" href="/assets/js/12.c241ab7b.js"><link rel="prefetch" href="/assets/js/13.3606ef29.js"><link rel="prefetch" href="/assets/js/14.9e52b225.js"><link rel="prefetch" href="/assets/js/15.1eda626f.js"><link rel="prefetch" href="/assets/js/16.57fa530a.js"><link rel="prefetch" href="/assets/js/17.4d702fca.js"><link rel="prefetch" href="/assets/js/18.6897cfd4.js"><link rel="prefetch" href="/assets/js/19.82dd7209.js"><link rel="prefetch" href="/assets/js/20.1d876bdb.js"><link rel="prefetch" href="/assets/js/21.bca1b723.js"><link rel="prefetch" href="/assets/js/22.e1d63e3c.js"><link rel="prefetch" href="/assets/js/23.d44f28ec.js"><link rel="prefetch" href="/assets/js/24.9d02eb30.js"><link rel="prefetch" href="/assets/js/25.bd58b994.js"><link rel="prefetch" href="/assets/js/26.2a9e33fc.js"><link rel="prefetch" href="/assets/js/27.2927fb51.js"><link rel="prefetch" href="/assets/js/28.79701ca2.js"><link rel="prefetch" href="/assets/js/3.9113ff3d.js"><link rel="prefetch" href="/assets/js/30.f65c2887.js"><link rel="prefetch" href="/assets/js/31.0a3a5660.js"><link rel="prefetch" href="/assets/js/32.ee2eeabc.js"><link rel="prefetch" href="/assets/js/33.f370393a.js"><link rel="prefetch" href="/assets/js/34.648a00c1.js"><link rel="prefetch" href="/assets/js/35.d770e284.js"><link rel="prefetch" href="/assets/js/36.4ed81de8.js"><link rel="prefetch" href="/assets/js/37.517fe00e.js"><link rel="prefetch" href="/assets/js/38.33c534a5.js"><link rel="prefetch" href="/assets/js/39.d3c88b7d.js"><link rel="prefetch" href="/assets/js/4.6c7a60bc.js"><link rel="prefetch" href="/assets/js/40.4b8c3095.js"><link rel="prefetch" href="/assets/js/41.a1c23ce7.js"><link rel="prefetch" href="/assets/js/42.0a34fcfb.js"><link rel="prefetch" href="/assets/js/43.02bf9e9f.js"><link rel="prefetch" href="/assets/js/44.9f0985dd.js"><link rel="prefetch" href="/assets/js/45.ac12c732.js"><link rel="prefetch" href="/assets/js/46.fb956287.js"><link rel="prefetch" href="/assets/js/5.18e62332.js"><link rel="prefetch" href="/assets/js/6.227c5a36.js"><link rel="prefetch" href="/assets/js/7.70d86003.js"><link rel="prefetch" href="/assets/js/8.7a99a721.js"><link rel="prefetch" href="/assets/js/9.fd4c7087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.78f28ec0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">闷葫芦博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/net/类的构造和特性.html" class="nav-link">C语言体系</a></div><div class="nav-item"><a href="/docs/github/git目录解析.html" class="nav-link">github理解</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端进阶" class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">css样式</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/vscode/键盘快捷键.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/npm/npm配置本地环境.html" class="nav-link">npm</a></li></ul></li></ul></div></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/net/类的构造和特性.html" class="nav-link">C语言体系</a></div><div class="nav-item"><a href="/docs/github/git目录解析.html" class="nav-link">github理解</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端进阶" class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">css样式</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/vscode/键盘快捷键.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/npm/npm配置本地环境.html" class="nav-link">npm</a></li></ul></li></ul></div></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/net/类的构造和特性.html" class="sidebar-link">类的构造和特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/类的构造和特性.html#_1-类的构造" class="sidebar-link">1.类的构造</a></li><li class="sidebar-sub-header"><a href="/docs/net/类的构造和特性.html#_2-类的特性-类的封装，继承，多态" class="sidebar-link">2.类的特性--类的封装，继承，多态</a></li><li class="sidebar-sub-header"><a href="/docs/net/类的构造和特性.html#_3-异常处理" class="sidebar-link">3.异常处理</a></li></ul></li><li><a href="/docs/net/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/docs/net/集合 泛型 迭代器原理.html" class="sidebar-link">集合 泛型 迭代器原理</a></li><li><a href="/docs/net/正则表达式.html" class="sidebar-link">正则表达式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/net/流文件和垃圾回收.html" class="sidebar-link">流文件和垃圾回收</a></li><li><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html" class="active sidebar-link">委托 事件 反射 枚举 扩展方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#委托" class="sidebar-link">委托</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#反射" class="sidebar-link">反射</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#枚举" class="sidebar-link">枚举</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#扩展方法" class="sidebar-link">扩展方法</a></li></ul></li><li><a href="/docs/net/发布订阅模式（事件）.html" class="sidebar-link">单利模式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/net/抽象函和接口.html" class="sidebar-link">抽象函和接口</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/net/序列化与反序列化.html" class="sidebar-link">序列化与反序列化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_1-xml" class="sidebar-link">1.xml</a></li><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_2-json" class="sidebar-link">2.json</a></li><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_3-二进制" class="sidebar-link">3.二进制</a></li><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_4-xml练习" class="sidebar-link">4.xml练习</a></li></ul></li><li><a href="/docs/net/定制特性Attribute和句柄IntPtr.html" class="sidebar-link">定制特性Attribute和句柄IntPtr</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/定制特性Attribute和句柄IntPtr.html#定制特性attribute" class="sidebar-link">定制特性Attribute</a></li><li class="sidebar-sub-header"><a href="/docs/net/定制特性Attribute和句柄IntPtr.html#c-关键字-intptr" class="sidebar-link">C# 关键字 IntPtr</a></li></ul></li><li><a href="/docs/net/Linq入门详解.html" class="sidebar-link">Linq入门详解</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#_1-隐式类型、匿名类型、对象初始化器" class="sidebar-link">1.隐式类型、匿名类型、对象初始化器</a></li><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#_2-lambda表达式，func委托" class="sidebar-link">2.Lambda表达式，Func委托</a></li><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#_3-扩展方法" class="sidebar-link">3.扩展方法</a></li><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#二、各种linq示例" class="sidebar-link">二、各种LINQ示例</a></li></ul></li><li><a href="/docs/net/线程、异步、进程.html" class="sidebar-link">线程、异步、进程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/线程、异步、进程.html#线程简例-thread-：" class="sidebar-link">线程简例(Thread)：</a></li><li class="sidebar-sub-header"><a href="/docs/net/线程、异步、进程.html#进程概念" class="sidebar-link">进程概念</a></li></ul></li><li><a href="/docs/net/socket原理.html" class="sidebar-link">socket原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/socket原理.html#同步" class="sidebar-link">同步</a></li><li class="sidebar-sub-header"><a href="/docs/net/socket原理.html#异步改进" class="sidebar-link">异步改进</a></li></ul></li><li><a href="/docs/net/单利模式.html" class="sidebar-link">单利模式</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="委托"><a href="#委托" class="header-anchor">#</a> 委托</h2> <h4 id="委托delegate"><a href="#委托delegate" class="header-anchor">#</a> 委托delegate</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>public delegate void mydelegate();//定义了一个mydelegate的类型 ,用来保存方法
+mydelegate md=new mydelegate（方法名）  存一个方法
+md（） 调一下委托
+1.是一种数据类型，一般在命名空间中定义
+2.定义委托时，需要指定返回值类型，委托名和参数名
+3.委托是引用类型，就像类一样，所以委托声明后，如果不赋值变量为null，所以在使用委托变量前最好使用非空校验！=null   ?.
+4.委托类型的变量只能赋值一个委托类型的对象
+mydelegate md=new mydelegate(M1)
+mydelegate md=M1
+5.md.invoke()调用
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="泛型委托："><a href="#泛型委托：" class="header-anchor">#</a> 泛型委托：</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>无返回值
+action
+action&lt;T&gt;
+有返回值
+func&lt;T&gt;    只有泛型版本的
+//保存无参数无返回值得方法
+action action=new action()
+action()
+
+public delegate void action &lt;T1,T2,T3&gt;()
+action&lt;string&gt; a1=m=&gt;{console.write()}
+action&lt;string,,int&gt; a1=m=&gt;{console.write()}
+
+public delegate Tresult func&lt;T1,T2,T3,Tresult&gt;()
+func&lt;int,int,int&gt; fun=(m,n)=&gt;{return m+n}
+int f=fun(m,n)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h4 id="多播委托"><a href="#多播委托" class="header-anchor">#</a> 多播委托</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>一个委托可以储存多个方法
+第一个要=赋值，后面的+=赋值
+action&lt;string&gt; action=m1
+action+=m2
+action+=m3
+action+=m4
+action-=m3
+action(&quot;aaaa&quot;)
+delegate my=new delegate(t1);
+md=delegate.combine(md,new mydelegate(T2))
+md()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h4 id="匿名方法-lambda表达式"><a href="#匿名方法-lambda表达式" class="header-anchor">#</a> 匿名方法,lambda表达式</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>匿名方法
+mydelegate md=delegate（）{console.write()}  
+
+lambda:不用传数据类型
+mydelegate md=()=&gt;{console.write()}
+mydelegate md=m=&gt;{console.write(m)}
+mydelegate md=(m,n)=&gt;{console.write(&quot;m&quot;+&quot;n&quot;)}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>事件基于委托
+只能-=，+=
+public event action test；
+声明委托和事件特别像，就是加一个event
+
+因为委托来实现外部可以随便调用，不能将委托变成pirvate，也就无法调用
+委托可以=赋值一旦=null，就全部取消掉了
+
+事件编译就是私有的委托，但加了add和remove两个共有的方法
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="反射"><a href="#反射" class="header-anchor">#</a> 反射</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>动态加载程序集中的元数据，获取其类型，获取其属性，方法，来操作,(智能提示)
+type mytype=typeof(my)
+fieldinfo[] fields=mytype.getfields();获取字段
+getmenber()获取成员
+getevent()获取事件
+getmethod()获取方法…………
+拿到type有很多操作，可以获取很多
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>动态加载程序集
+assembly ass=assembly.loadfile(@&quot;路径&quot;)；
+获取说有程序集中的类型
+type[] types=asm.gettypes()//获取所有类型
+.getexportedtypes()//获取所有public类型
+
+type typeperson=asm.gettypes(types[0])//获取第一个类型下所有类型
+methodinfo method=typeperson.getmethod(&quot;方法名&quot;)获取方法
+method.invoke(对象，参数)
+
+无参
+activator.createinstance（typeperson）//创建实例
+有参
+constructorinfo ci= typeperson.getconstructor(new type[]{typeof(string),typeof(string)}})
+ci.invoke(new object[]{&quot;zzzz&quot;,&quot;aaa&quot;});
+
+获取属性值
+propertyinfo pinfo=typeperson.getproperty(&quot;name&quot;);
+string a=pinfo.getvalue(object,null)
+
+b.isassignablefrom(a) 类型检验  a能否赋值给b 父子类关系
+a.issubclassf(b) 同上  与接口无关
+.isinstanceoftype()  实例检验  父子类关系
+
+.isabstract（） 判断是否抽象类，接口，静态类（不能实例化的）
+
+反射获取私有方法
+methodinfo method=typeperson.getmethod(&quot;方法名&quot;，bindingflags.nopublic|bindingflags.instance)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="枚举"><a href="#枚举" class="header-anchor">#</a> 枚举</h2> <p>==没加[flags]显示数字==</p> <p>==加[flags]显示枚举类型==</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>enum枚举
+标志枚举[flags]不互斥
+[Flags]
+public enum Permission
+{
+    create = 1,
+    read = 2,
+    update = 4,
+    delete = 8,
+}
+static void Main(string[] args)
+{
+    Permission permission = Permission.create | Permission.read | Permission.update | Permission.delete;
+    Console.WriteLine(&quot;1、枚举创建，并赋值……&quot;);
+    Console.WriteLine(permission.ToString());
+    Console.WriteLine((int)permission);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="扩展方法"><a href="#扩展方法" class="header-anchor">#</a> 扩展方法</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.静态类、静态方法以及this关键字。
+2.无法访问类的私有成员
+3.静态类和类要同一个空间，否则要引用
+public class person
+{
+    public void say()
+    {}
+}
+public static class person
+{
+    public static  void say(this person p)
+    {
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Men-HuLu/blog/edit/master/docs/net/委托 事件 反射 枚举 扩展方法.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/net/流文件和垃圾回收.html" class="prev">流文件和垃圾回收</a></span> <span class="next"><a href="/docs/net/发布订阅模式（事件）.html">单利模式</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.024d52aa.js" defer></script><script src="/assets/js/2.cabe3d8d.js" defer></script><script src="/assets/js/29.56682f2c.js" defer></script>
+  </body>
+</html>

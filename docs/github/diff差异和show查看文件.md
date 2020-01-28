@@ -1,0 +1,37 @@
+---
+title: diff差异和show查看文件
+date: "2019-4-11"
+---
+
+### 1.工作区与暂存区的差异
+```
+git diff
+git diff  -- 文件名  //指定具体文件
+```
+
+### 2.暂存区与HEAD的差异
+```
+git diff --cached
+```
+
+### 3.提交版本比较差异
+
+```
+git diff 77rgr834 3fre8uej //两个版本的差异
+git diff 77rgr834 3fre8uej --文件
+
+git diff HEAD           //显示暂存区和工作区的差异
+git diff HEAD HEAD^     //HEAD和HEAD父亲比较
+git diff HEAD HEAD~1
+
+git diff HEAD HEAD^^    //HEAD和HEAD父亲的父亲比较
+git diff HEAD HEAD~2
+```
+
+### 4.show查看文件看
+```
+git show                //显示某次提交的元数据和内容变化 
+git show --name-only [commit] //显示某次提交发生变化的文件
+git show [commit]:[filename]    //显示某次提交时，某个文件的内容
+git reflog      //显示当前分支的最近几次提交
+```

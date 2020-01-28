@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>冷门EF语句 | 闷葫芦博客</title>
+    <meta name="description" content="前端，算法和架构的博客">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.78f28ec0.css" as="style"><link rel="preload" href="/assets/js/app.024d52aa.js" as="script"><link rel="preload" href="/assets/js/2.cabe3d8d.js" as="script"><link rel="preload" href="/assets/js/7.70d86003.js" as="script"><link rel="prefetch" href="/assets/js/10.f4bcbc3a.js"><link rel="prefetch" href="/assets/js/11.105090f8.js"><link rel="prefetch" href="/assets/js/12.c241ab7b.js"><link rel="prefetch" href="/assets/js/13.3606ef29.js"><link rel="prefetch" href="/assets/js/14.9e52b225.js"><link rel="prefetch" href="/assets/js/15.1eda626f.js"><link rel="prefetch" href="/assets/js/16.57fa530a.js"><link rel="prefetch" href="/assets/js/17.4d702fca.js"><link rel="prefetch" href="/assets/js/18.6897cfd4.js"><link rel="prefetch" href="/assets/js/19.82dd7209.js"><link rel="prefetch" href="/assets/js/20.1d876bdb.js"><link rel="prefetch" href="/assets/js/21.bca1b723.js"><link rel="prefetch" href="/assets/js/22.e1d63e3c.js"><link rel="prefetch" href="/assets/js/23.d44f28ec.js"><link rel="prefetch" href="/assets/js/24.9d02eb30.js"><link rel="prefetch" href="/assets/js/25.bd58b994.js"><link rel="prefetch" href="/assets/js/26.2a9e33fc.js"><link rel="prefetch" href="/assets/js/27.2927fb51.js"><link rel="prefetch" href="/assets/js/28.79701ca2.js"><link rel="prefetch" href="/assets/js/29.56682f2c.js"><link rel="prefetch" href="/assets/js/3.9113ff3d.js"><link rel="prefetch" href="/assets/js/30.f65c2887.js"><link rel="prefetch" href="/assets/js/31.0a3a5660.js"><link rel="prefetch" href="/assets/js/32.ee2eeabc.js"><link rel="prefetch" href="/assets/js/33.f370393a.js"><link rel="prefetch" href="/assets/js/34.648a00c1.js"><link rel="prefetch" href="/assets/js/35.d770e284.js"><link rel="prefetch" href="/assets/js/36.4ed81de8.js"><link rel="prefetch" href="/assets/js/37.517fe00e.js"><link rel="prefetch" href="/assets/js/38.33c534a5.js"><link rel="prefetch" href="/assets/js/39.d3c88b7d.js"><link rel="prefetch" href="/assets/js/4.6c7a60bc.js"><link rel="prefetch" href="/assets/js/40.4b8c3095.js"><link rel="prefetch" href="/assets/js/41.a1c23ce7.js"><link rel="prefetch" href="/assets/js/42.0a34fcfb.js"><link rel="prefetch" href="/assets/js/43.02bf9e9f.js"><link rel="prefetch" href="/assets/js/44.9f0985dd.js"><link rel="prefetch" href="/assets/js/45.ac12c732.js"><link rel="prefetch" href="/assets/js/46.fb956287.js"><link rel="prefetch" href="/assets/js/5.18e62332.js"><link rel="prefetch" href="/assets/js/6.227c5a36.js"><link rel="prefetch" href="/assets/js/8.7a99a721.js"><link rel="prefetch" href="/assets/js/9.fd4c7087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.78f28ec0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">闷葫芦博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/net/类的构造和特性.html" class="nav-link">C语言体系</a></div><div class="nav-item"><a href="/docs/github/git目录解析.html" class="nav-link">github理解</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端进阶" class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">css样式</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/vscode/键盘快捷键.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/npm/npm配置本地环境.html" class="nav-link">npm</a></li></ul></li></ul></div></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/net/类的构造和特性.html" class="nav-link">C语言体系</a></div><div class="nav-item"><a href="/docs/github/git目录解析.html" class="nav-link">github理解</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端进阶" class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">css样式</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/vscode/键盘快捷键.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/npm/npm配置本地环境.html" class="nav-link">npm</a></li></ul></li></ul></div></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h6 id="ef中sql语句执行"><a href="#ef中sql语句执行" class="header-anchor">#</a> EF中sql语句执行</h6> <div class="language- line-numbers-mode"><pre class="language-text"><code> using (MySqlConnection conn = _dbErp2.Database.GetDbConnection() as MySqlConnection)
+{
+    conn.Open();
+    MySqlParameter[] para = new MySqlParameter[] {
+        new  MySqlParameter (&quot;city&quot;,$&quot;{city}%&quot;),
+        new  MySqlParameter (&quot;district&quot;,$&quot;{district}%&quot;)
+    };
+    string sql = @&quot;
+SELECT  distinct custom_address,custom_state,custom_city,custom_district  FROM  erp2.list_order 
+WHERE order_state='已发货' AND custom_city LIKE @city AND custom_district LIKE @district AND (custom_address!='自提' || custom_address!=''||custom_address is not null) LIMIT 20;&quot;;
+DataTable dt = MySqlHelper.ExecuteDataset(conn, sql, para).Tables[0];
+    List&lt;MapGetResponse&gt; rsp = new List&lt;MapGetResponse&gt;();
+    foreach (DataRow dr in dt.Rows)
+    {
+        rsp.Add(new MapGetResponse
+        {
+            Province = dr[&quot;custom_state&quot;].ToString(),
+            City = dr[&quot;custom_city&quot;].ToString(),
+            District = dr[&quot;custom_district&quot;].ToString(),
+            Address = dr[&quot;custom_address&quot;].ToString()
+    });
+}
+conn.Close();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h6 id="ef回滚"><a href="#ef回滚" class="header-anchor">#</a> EF回滚</h6> <div class="language- line-numbers-mode"><pre class="language-text"><code>            using (var tran = _dbApp7.Database.BeginTransaction())
+            {
+                try
+                {
+                    var customer = _dbApp7.WxCustomer.Where(r =&gt; r.Id == wechatUser.Id).FirstOrDefault();
+                    DateTime date_u = DateTime.FromFileTimeUtc(req.Timestamp);
+                    if (Math.Abs(date_u.Subtract(DateTime.UtcNow).TotalMinutes) &gt; 10) { return BadRequest(&quot;二维码已失效&quot;); }
+                    if (req.Role.ToLower() == &quot;u&quot;)
+                    {
+                        var show = new WxPromotion
+                        {
+                            UId = req.Id,
+                            Type = &quot;share&quot;,
+                            Enable = &quot;是&quot;
+                        };
+                        _dbApp7.WxPromotion.Add(show);
+                        customer.Role = &quot;user&quot;;
+                        customer.PId = show.Id;
+                        customer.UId = req.Id;
+                        _dbApp7.WxCustomer.Update(customer);
+                        _dbApp7.SaveChanges();
+                    }
+                    else if (req.Role.ToLower() == &quot;p&quot; &amp;&amp; customer.Role != &quot;user&quot;)
+                    {
+                        var p_show = new WxPromotion
+                        {
+                            UId = req.Id,
+                            Type = &quot;p_share&quot;,
+                            Enable = &quot;是&quot;
+                        };
+                        _dbApp7.WxPromotion.Add(p_show);
+                        customer.Role = &quot;promoter&quot;;
+                        customer.PId = p_show.Id;
+                        customer.UId = req.Id;
+                        _dbApp7.WxCustomer.Update(customer);
+                        _dbApp7.SaveChanges();
+                    }
+                    return NoContent();
+                }
+                catch (HttpException e)
+                {
+                    tran.Rollback();
+                    return StatusCode(e.Code, e.Value);
+                }
+            }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Men-HuLu/blog/edit/master/docs/efcore/冷门EF语句.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.024d52aa.js" defer></script><script src="/assets/js/2.cabe3d8d.js" defer></script><script src="/assets/js/7.70d86003.js" defer></script>
+  </body>
+</html>
