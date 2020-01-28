@@ -27,7 +27,8 @@
     "lint:notes": "node bin/prettier.js -t notes -l",
     "start": "npm run dev",
     "dev": "vuepress dev .",
-    "build": "vuepress build ."
+    "build": "vuepress build .",
+    "deploy": "sh deploy.sh"
   },
   "repository": {
     "type": "git",
