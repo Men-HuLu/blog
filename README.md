@@ -9,6 +9,9 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
 
 > 记录我学习成长历程的博客，以便获取成果的反馈。 （我下贱啊😢😢😢，嘤嘤嘤） 
 
+ ## 架构学习之路
+  - `[架构的定义]` [2020年的第一章](https://men-hulu.github.io/docs/framework/架构是什么.html)
+
  ## C语言体系
 - **c#**
   - `[语法教程]` [面对对象编程](https://men-hulu.github.io/docs/net/类的构造和特性.html)

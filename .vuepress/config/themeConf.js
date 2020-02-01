@@ -22,6 +22,7 @@ module.exports = {
   editLinkText: "在 GitHub 上编辑此页",
 
   nav: [
+    { text: '架构篇', link: '/docs/framework/架构是什么' },
     { text: 'C语言体系', link: '/docs/net/类的构造和特性' },
     { text: 'github理解', link: '/docs/github/git目录解析' },
     {
@@ -89,6 +90,9 @@ module.exports = {
       '/docs/npm/个人资料管理',
       '/docs/npm/发布包',
       '/docs/npm/故障修复',
+    ],
+    'docs/framework': [
+      'docs/framework/架构是什么',
     ]
   },
 }
