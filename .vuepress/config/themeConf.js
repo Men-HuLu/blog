@@ -40,6 +40,7 @@ module.exports = {
         },
       ]
     },
+    { text: '读书笔记', link: '/docs/notes/刻意练习' },
   ],
   displayAllHeaders: true,
   sidebar: {
@@ -91,8 +92,11 @@ module.exports = {
       '/docs/npm/发布包',
       '/docs/npm/故障修复',
     ],
-    'docs/framework': [
-      'docs/framework/架构是什么',
+    '/docs/framework': [
+      'docs/framework/架构是什么'
+    ],
+    '/docs/notes': [
+      '/docs/notes/刻意练习'
     ]
   },
 }

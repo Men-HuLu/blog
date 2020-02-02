@@ -6,11 +6,11 @@ node_modules
 .vscode
 
 # vuepress 
-dist
+.vuepress/dist
 .vuepress/config/sidebar-auto.js
 
 # 撰写中
 todo/
 
 # 读书笔记
-notes/
+# notes/
