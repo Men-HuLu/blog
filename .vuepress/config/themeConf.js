@@ -93,7 +93,7 @@ module.exports = {
       '/docs/npm/故障修复',
     ],
     '/docs/framework': [
-      'docs/framework/架构是什么'
+      '/docs/framework/架构是什么'
     ],
     '/docs/notes': [
       '/docs/notes/刻意练习'
