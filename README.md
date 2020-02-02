@@ -11,6 +11,7 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
 
  ## 架构学习之路
   - `[架构的定义]` [2020年的第一章](https://men-hulu.github.io/docs/framework/架构是什么.html)
+  - `[架构的目的]` [架构的历史背景及目的](https://men-hulu.github.io/docs/framework/架构的历史及目的.html)
 
  ## C语言体系
 - **c#**
