@@ -23,11 +23,13 @@ module.exports = {
 
   nav: [
     { text: '架构篇', link: '/docs/framework/架构是什么' },
+    { text: 'net core', link: '/docs/efcore/创建EF步骤' },
     { text: 'C语言体系', link: '/docs/net/类的构造和特性' },
     { text: 'github理解', link: '/docs/github/git目录解析' },
     {
       text: '前端进阶', items: [
-        { text: 'css样式', link: '/docs/css/css选择器和属性' },
+        { text: 'CSS样式', link: '/docs/css/css选择器和属性' },
+        { text: 'ES6进阶', link: '/docs/javascript/ES6的基本类型' },
         {
           text: '开发利器', items: [
             {
@@ -60,6 +62,10 @@ module.exports = {
       '/docs/net/socket原理',
       '/docs/net/单利模式'
     ],
+    '/docs/efcore': [
+      '/docs/efcore/创建EF步骤',
+      '/docs/efcore/冷门EF语句'
+    ],
     '/docs/github': [
       '/docs/github/git目录解析',
       '/docs/github/git存储结构',
@@ -80,6 +86,14 @@ module.exports = {
     ],
     '/docs/css': [
       '/docs/css/css选择器和属性'
+    ],
+    '/docs/javascript': [
+      '/docs/javascript/ES6的基本类型',
+      '/docs/javascript/面对对象和基于对象',
+      '/docs/javascript/基于对象深入——原型',
+      '/docs/javascript/对象分类',
+      '/docs/javascript/宏观任务与微观任务',
+      '/docs/javascript/JS执行上下文和闭包'
     ],
     '/docs/vscode': [
       '/docs/vscode/键盘快捷键',

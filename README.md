@@ -3,11 +3,12 @@ home: true
 comment: false
 single: true
 heroImage: /edit-tools.png
-heroText: 正经人谁写日记啊，那博客呢？
+heroText: 不正经人的博客
 footer: MIT Licensed | Copyright © 2020 Men-HuLu
 ---
 
-> 记录我学习成长历程的博客，以便获取成果的反馈。
+> 记录我学习成长历程的博客，以便获取成果的反馈。我认为随着成长、经历、挫折，可以不正经，但不可不正直，可以失去纯洁(思想)，但不可以失去良知。
+
 
  ## 架构学习之路
   - `[架构的定义]` [2020年的第一章](https://men-hulu.github.io/docs/framework/架构是什么.html)
