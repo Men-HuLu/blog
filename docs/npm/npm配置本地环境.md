@@ -3,7 +3,7 @@ title: npm配置本地环境
 date: "2019-6-4"
 ---
 
-**1. npm安装和版本更新**
+### 1. npm安装和版本更新
 [node.js官网安装](https://nodejs.org/en/)
 ```
 npm命令行界面（CLI）
@@ -16,7 +16,7 @@ npm install npm@latest -g
 npm install npm@next -g
 ```
 
-**2. npm全局配置**
+### 2. npm全局配置
 
 node.js安装,npm默认路径为==C:/Users[用户]/administrator[你的计算机名字]/AppData/Roaming/npm==
 ```
@@ -32,7 +32,7 @@ npm config set prefix D:/node/nodejs/node_global/ //全局包目录，就在node
 npm config set cache D:/node/nodejs/node_cache/  //全局包缓存目录，就在node安装目录新建了个nodejs文件夹存放
 ```
 
-**3. npm初始化一个项目**
+### 3. npm初始化一个项目
 
 ```
 npm init
@@ -76,7 +76,7 @@ npm delete init.license
 //npm install <package_name> --save-dev
 ```
 
-##### 4.配置查看命令
+### 4.配置查看命令
 
 ```
 npm config ：管理配置文件

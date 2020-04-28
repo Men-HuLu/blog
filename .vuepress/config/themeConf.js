@@ -102,6 +102,8 @@ module.exports = {
     '/docs/npm': [
       '/docs/npm/npm配置本地环境',
       '/docs/npm/npm基础命令',
+      '/docs/npm/npm源切换',
+      '/docs/npm/npx命令',
       '/docs/npm/个人资料管理',
       '/docs/npm/发布包',
       '/docs/npm/故障修复',
