@@ -111,7 +111,8 @@ module.exports = {
       '/docs/framework/架构的历史及目的'
     ],
     '/docs/notes': [
-      '/docs/notes/刻意练习'
+      '/docs/notes/刻意练习',
+      '/docs/notes/中的精神'
     ]
   },
 }
