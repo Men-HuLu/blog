@@ -3,8 +3,9 @@ title: git目录解析
 date: "2019-4-1"
 ---
 
-###### 为了了解git。了解git的原理，先从.git的文件
-### 1.git的目录
+> 为了了解git。了解git的原理，先从.git的文件
+
+## 1.git的目录
 - hook
 - info
 - logs
@@ -19,16 +20,18 @@ date: "2019-4-1"
 - packed-refs
 
 
+
+### 2.文件夹解析
 ```
 cd .git  //进入.git文件
 ls -al   //查列表
 ```
-#### 文件夹解析
 存储指向branch的最近一次commit对象的指针
-##### hook:存放一些shell脚本
-##### info:存放仓库的一些信息
-##### logs:保存所有更新的引用记录
-##### ==refs:==
+1. hook:存放一些shell脚本
+1. info:存放仓库的一些信息
+1. logs:保存所有更新的引用记录
+1. refs:
+
 ```
 第一步：
 cd refs
@@ -86,7 +89,7 @@ drwxr-xr-x 1 Hades 197121  0 2月   5 22:57 feature/
 
 ```
 
-##### ==objects:==
+### objects:
 
 ```
 cd objects
@@ -145,28 +148,29 @@ git cat-file -p c1c4091a2ad1d84f1d  //可以在进一步的查看内容
 ```
 
 
-#### 文件解析
+### 文件解析
 
-##### COMMIT_EDITMSG：最新提交的一次Commit Message，git系统不会用到，给用户一个参考
+#### COMMIT_EDITMSG：最新提交的一次Commit Message，git系统不会用到，给用户一个参考
 
-##### description：仓库的描述信息，主要给gitweb等git托管系统使用
-##### index：暂存区（stage），一个二进制文件
+#### description：仓库的描述信息，主要给gitweb等git托管系统使用
+#### index：暂存区（stage），一个二进制文件
 
-##### FETCH_HEAD：是一个版本链接，指向着目前已经从远程仓库取下来的分支的末端版本
+#### FETCH_HEAD：是一个版本链接，指向着目前已经从远程仓库取下来的分支的末端版本
 
-##### ORIG_HEAD:HEAD指针的前一个状态
+#### ORIG_HEAD:HEAD指针的前一个状态
 
-##### ==HEAD:==
+#### HEAD:
 映射到ref引用,当前正在使用的分支
 ```
 cat HEAD //查看HEAD哈希值
 7035757e6b6884467aceb0700fcbb4b085c069f2
 ```
 当切换分支或提交新的commit,哈希值会发生变化
-##### ==config:==
+
+#### config:
 git仓库配置文件
 ```
 cat .git/config //查看git的配置
 ```
 
-##### packed-refs:当ref文件过多时会打包到packed-refs
+#### packed-refs:当ref文件过多时会打包到packed-refs
