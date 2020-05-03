@@ -43,4 +43,4 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
 
  ## 读书笔记
   - [刻意练习](https://men-hulu.github.io/docs/notes/刻意练习.html)
-  - [中的思想](https://men-hulu.github.io/docs/notes/中的精神.html)
+  - [中的精神](https://men-hulu.github.io/docs/notes/中的精神.html)
