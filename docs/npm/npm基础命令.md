@@ -3,35 +3,35 @@ title: npm基础命令
 date: "2019-6-5"
 ---
 
-##### 安装包
+#### 安装包
 ```
 npm install lodash
 npm install lodash@版本号
 ```
-##### 更新包
+#### 更新包
 ```
 npm update
 ```
-##### 卸载包
+#### 卸载包
 ```
 //
 npm uninstall lodash
 //从依赖包中删除
 npm uninstall --save lodash
 ```
-##### 搜索包
+#### 搜索包
 ```
 npm search lodash
 ```
-##### 发布模块
+#### 发布模块
 ```
 npm publish lodash
 ```
-##### 撤销发布的代码
+#### 撤销发布的代码
 ```
 npm unpublish  <package>@<version>
 ```
-#####  清空本地缓存
+####  清空本地缓存
 ```
 npm cache clear： 清空npm本地缓存（相同版本号发布新版本时）
 ```
@@ -73,10 +73,6 @@ npm info  <package>：显示包的信息
 -B 或 --save-bundle ： 包也将被添加到bundleDependencies。
 -E 或 --save-exact ：会在 package.json 文件指定安装模块的确切版本。
 ```
-
-
-
-
 
 **npm设置访问权限**
 ```
