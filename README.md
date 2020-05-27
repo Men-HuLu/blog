@@ -20,7 +20,7 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
 - [逃避虽可耻但有用](https://www.bilibili.com/bangumi/play/ep246180?from=search&seid=15988493679209625045) `[gakki演电视剧很香]`
 - 知我所能,尽善尽美;知我不能,虚怀若谷
 - 精神之自由,人格之独立，责任之担当
-> 以上我内心所追寻的,同时我深知自己是一个在普通不过的人，故有时我能积极奋起，有时也内心失意之时。
+> 以上是我所追寻的,同时我深知自己是一个在普通不过的人，故有时我能积极奋起，有时也内心失意之时。
 
  ## 架构学习之路——摘录自极客时间
   - `[架构的定义]` [2020年的第一章](https://men-hulu.github.io/docs/framework/架构是什么.html)

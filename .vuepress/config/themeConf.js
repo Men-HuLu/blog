@@ -42,6 +42,7 @@ module.exports = {
         },
       ]
     },
+    { text: 'elastic', link: '/docs/elastic/1.elastic安装及使用' },
     { text: '读书笔记', link: '/docs/notes/刻意练习' },
   ],
   displayAllHeaders: true,
@@ -115,6 +116,9 @@ module.exports = {
     '/docs/notes': [
       '/docs/notes/刻意练习',
       '/docs/notes/中的精神'
-    ]
+    ],
+    '/docs/elastic': [
+      '/docs/elastic/1.elastic安装及使用'
+    ],
   },
 }
