@@ -23,6 +23,7 @@ module.exports = {
 
   nav: [
     { text: '架构篇', link: '/docs/framework/架构是什么' },
+    { text: 'ELK', link: '/docs/elastic/1.elastic安装及使用' },
     { text: 'net core', link: '/docs/efcore/创建EF步骤' },
     { text: 'C语言体系', link: '/docs/net/类的构造和特性' },
     { text: 'github理解', link: '/docs/github/git目录解析' },
@@ -42,7 +43,6 @@ module.exports = {
         },
       ]
     },
-    { text: 'elastic', link: '/docs/elastic/1.elastic安装及使用' },
     { text: '读书笔记', link: '/docs/notes/刻意练习' },
   ],
   displayAllHeaders: true,
