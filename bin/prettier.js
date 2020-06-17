@@ -7,7 +7,7 @@ const chalk = require('chalk')
 const ora = require('ora')
 
 const pkgJson = require('./../package.json')
-const print = console.log
+const print = console.log()
 
 program
   .version(pkgJson.version)

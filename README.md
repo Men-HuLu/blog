@@ -2,7 +2,7 @@
 home: true
 comment: false
 single: true
-heroImage: /profile.jpg
+heroImage: /profile.gif
 heroText: 闷葫芦的博客
 footer: MIT Licensed | Copyright © 2020 Men-HuLu
 ---
@@ -20,7 +20,7 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
 - [逃避虽可耻但有用](https://www.bilibili.com/bangumi/play/ep246180?from=search&seid=15988493679209625045) `[gakki演电视剧很香]`
 - 知我所能,尽善尽美;知我不能,虚怀若谷
 
-> 不定时更新。其实就是懒。
+> 不定时更新。其实就是懒。最后说加一句gakki天下第一。
 
 
  ## 架构学习之路——摘录自极客时间
@@ -43,5 +43,7 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
   - `[故障修复]` [npm故障排查](https://men-hulu.github.io/docs/npm/故障修复.html)
 
  ## 读书笔记
-  - [刻意练习](https://men-hulu.github.io/docs/notes/刻意练习.html)
-  - [中的精神](https://men-hulu.github.io/docs/notes/中的精神.html)
+  - [第1期——刻意练习](https://men-hulu.github.io/docs/notes/刻意练习.html)
+  - [第2期——中的精神](https://men-hulu.github.io/docs/notes/中的精神.html)
+  - [第3期——小狗钱钱](https://men-hulu.github.io/docs/notes/小狗钱钱.html)
+

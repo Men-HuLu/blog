@@ -1,5 +1,5 @@
 ---
-title: checkout和reset文件恢复(慎用)
+title: checkout和reset文件恢复
 date: "2019-4-12"
 ---
 

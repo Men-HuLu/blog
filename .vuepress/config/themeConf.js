@@ -79,7 +79,7 @@ module.exports = {
       '/docs/github/log和gitk操作',
       '/docs/github/tag标签',
       '/docs/github/diff差异和show查看文件',
-      '/docs/github/checkout和reset文件恢复(慎用)',
+      '/docs/github/checkout和reset文件恢复',
       '/docs/github/stash紧急任务',
       '/docs/github/gitignore忽略跟踪文件',
       '/docs/github/常用传输协议和创建SSH公私钥',
@@ -119,6 +119,9 @@ module.exports = {
     ],
     '/docs/elastic': [
       '/docs/elastic/1.elastic安装及使用'
+    ],
+    '/docs/diary': [
+      '/docs/diary/1'
     ],
   },
 }
