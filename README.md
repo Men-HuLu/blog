@@ -46,4 +46,8 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
   - [第1期——刻意练习](https://men-hulu.github.io/docs/notes/刻意练习.html)
   - [第2期——中的精神](https://men-hulu.github.io/docs/notes/中的精神.html)
   - [第3期——小狗钱钱](https://men-hulu.github.io/docs/notes/小狗钱钱.html)
+  - [第4期——事实](https://men-hulu.github.io/docs/notes/事实.html)
+
+ ## 表情包系列
+   - [gakki表情包](https://men-hulu.github.io/docs/diary/1.html)
 

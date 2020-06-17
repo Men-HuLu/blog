@@ -115,7 +115,9 @@ module.exports = {
     ],
     '/docs/notes': [
       '/docs/notes/刻意练习',
-      '/docs/notes/中的精神'
+      '/docs/notes/中的精神',
+      '/docs/notes/小狗钱钱',
+      '/docs/notes/事实',
     ],
     '/docs/elastic': [
       '/docs/elastic/1.elastic安装及使用'
