@@ -23,9 +23,22 @@ module.exports = {
 
   nav: [
     { text: '架构篇', link: '/docs/framework/架构是什么' },
-    { text: 'ELK', link: '/docs/elastic/1.elastic安装及使用' },
-    { text: 'net core', link: '/docs/efcore/创建EF步骤' },
-    { text: 'C语言体系', link: '/docs/net/类的构造和特性' },
+    {
+      text: 'Linux', items: [
+        { text: 'Linux基础', link: '/docs/linux/1.linux入门及帮助' },
+        { text: 'ELK日志分析系统', link: '/docs/elastic/1.Elasticsearch安装及使用' }
+      ]
+    },
+    {
+      text: 'C从入门到入土', items: [
+        { text: 'c#语法', link: '/docs/net/类的构造和特性' },
+        {
+          text: 'asp.net core', items: [
+            { text: 'EF创建', link: '/docs/efcore/创建EF步骤' }
+          ]
+        },
+      ]
+    },
     { text: 'github理解', link: '/docs/github/git目录解析' },
     {
       text: '前端进阶', items: [
@@ -119,8 +132,23 @@ module.exports = {
       '/docs/notes/小狗钱钱',
       '/docs/notes/事实',
     ],
+    '/docs/linux': [
+      '/docs/linux/1.linux入门及帮助',
+      '/docs/linux/2.基础指令',
+      '/docs/linux/3.vim基本操作',
+      '/docs/linux/4.用户和用户管理',
+      '/docs/linux/5.用户切换和配置文件',
+      '/docs/linux/6.文件权限及修改',
+      '/docs/linux/7.网络管理',
+      '/docs/linux/8.软件安装',
+    ],
     '/docs/elastic': [
-      '/docs/elastic/1.elastic安装及使用'
+      '/docs/elastic/1.Elasticsearch安装及使用',
+      '/docs/elastic/2.Elasticsearch介绍',
+      '/docs/elastic/3.文档crud和批量操作',
+      '/docs/elastic/4.倒排索引及分词器',
+      '/docs/elastic/5.SearchAPI',
+      '/docs/elastic/6.索引的基础配置',
     ],
     '/docs/diary': [
       '/docs/diary/1'

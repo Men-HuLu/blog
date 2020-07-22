@@ -43,9 +43,11 @@ MySql
 运行：Install-Package Pomelo.EntityFrameworkCore.MySql.Design
 ```
 
+> 随着官方版本的更新，可能会出现报错,在此我展示我使用的版本。
+![image](https://men-hulu.github.io/efcore/1-1.png)
+
+
 ### DB First——从现有数据库创建模型
-
-
 ```
 MySql
 运行：Scaffold-DbContext -Connection "server=111.231.132.***;port=3306;uid=ymj;pwd=******;database=test;charset=utf8;sslmode=none;" -Provider "MySql.Data.EntityFrameworkCore" -OutputDir "Models"
@@ -60,7 +62,7 @@ Scaffold-DbContext
 -Connection <String>	数据库的连接字符串。
 -Provider <String>	要使用的提供程序。 （例如 Microsoft.EntityFrameworkCore.SqlServer)
 -OutputDir <String >	要将文件放入的目录。 路径是相对于项目目录。
---Context <String >	若要生成的 dbcontext 名称。
+-Context <String >	若要生成的 dbcontext 名称。
 -Schemas <String[]>	要生成实体类型的表架构。
 -Tables <String[]>	要生成实体类型的表。
 -DataAnnotations	使用属性来配置该模型 （如果可能）。 如果省略，则使用仅 fluent API。
