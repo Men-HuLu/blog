@@ -47,7 +47,7 @@ module.exports = {
         {
           text: '开发利器', items: [
             {
-              text: 'vscode', link: '/docs/vscode/键盘快捷键'
+              text: 'vscode', link: '/docs/vscode/1.键盘快捷键'
             },
             {
               text: 'npm', link: '/docs/npm/npm配置本地环境'
@@ -110,8 +110,11 @@ module.exports = {
       '/docs/javascript/JS执行上下文和闭包'
     ],
     '/docs/vscode': [
-      '/docs/vscode/键盘快捷键',
-      '/docs/vscode/鼠标快捷键'
+      '/docs/vscode/0.我的配置',
+      '/docs/vscode/1.键盘快捷键',
+      '/docs/vscode/2.鼠标快捷键',
+      '/docs/vscode/3.代码片段',
+      '/docs/vscode/4.命令行使用'
     ],
     '/docs/npm': [
       '/docs/npm/npm配置本地环境',

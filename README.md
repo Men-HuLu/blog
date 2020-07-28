@@ -60,6 +60,7 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
   - [DIYgod](https://diygod.me/)
   - [Phodal Huang](https://www.phodal.com)
   - [ihoey](https://blog.ihoey.com/)
+  - [马丁·克莱普曼](https://martin.kleppmann.com/)
 
 
 
