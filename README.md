@@ -34,16 +34,10 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
    - `[Elasticsearch]` [Elasticsearch安装及使用](https://men-hulu.github.io/docs/elastic/1.Elasticsearch安装及使用.html)
  
  ## 开发工具
-- **git**
   - `[代码管理]` [git是如何管理代码的?](https://men-hulu.github.io/docs/github/git目录解析.html)
-- **npm**
-  - `[npm配置]` [npm配置本地环境，文件结构](https://men-hulu.github.io/docs/npm/npm配置本地环境.html)
-  - `[npm基础指令]` [npm基础命令](https://men-hulu.github.io/docs/npm/npm基础命令.html)
-  - `[npm源切换]` [npm源如何修改?](https://men-hulu.github.io/docs/npm/npm源切换.html)
-  - `[npx命令]` [npx命令的作用](https://men-hulu.github.io/docs/npm/npx命令.html)
-  - `[个人资料管理]` [npm包的发布前准备](https://men-hulu.github.io/docs/npm/个人资料管理.html)
-  - `[发布包]` [npm包的发布管理](https://men-hulu.github.io/docs/npm/发布包.html)
-  - `[故障修复]` [npm故障排查](https://men-hulu.github.io/docs/npm/故障修复.html)
+  - `[npm使用教程]` [npm配置本地环境](https://men-hulu.github.io/docs/tool/npm使用教程.html)
+  - `[vscode快捷使用教程]` [vscode快捷使用教程](https://men-hulu.github.io/docs/tool/vscode快捷使用教程.html)
+  - `[eslint配置]` [eslint](https://men-hulu.github.io/docs/tool/eslint配置.html)
 
  ## 读书笔记
   - [第1期——刻意练习](https://men-hulu.github.io/docs/notes/刻意练习.html)
@@ -61,7 +55,6 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
   - [Phodal Huang](https://www.phodal.com)
   - [ihoey](https://blog.ihoey.com/)
   - [马丁·克莱普曼](https://martin.kleppmann.com/)
-
 
 
  ## 近期学习计划

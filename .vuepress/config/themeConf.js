@@ -47,10 +47,10 @@ module.exports = {
         {
           text: '开发利器', items: [
             {
-              text: 'vscode', link: '/docs/vscode/1.键盘快捷键'
+              text: 'vscode', link: '/docs/tool/vscode快捷使用教程'
             },
             {
-              text: 'npm', link: '/docs/npm/npm配置本地环境'
+              text: 'npm', link: '/docs/tool/npm使用教程'
             }
           ]
         },
@@ -109,21 +109,10 @@ module.exports = {
       '/docs/javascript/宏观任务与微观任务',
       '/docs/javascript/JS执行上下文和闭包'
     ],
-    '/docs/vscode': [
-      '/docs/vscode/0.我的配置',
-      '/docs/vscode/1.键盘快捷键',
-      '/docs/vscode/2.鼠标快捷键',
-      '/docs/vscode/3.代码片段',
-      '/docs/vscode/4.命令行使用'
-    ],
-    '/docs/npm': [
-      '/docs/npm/npm配置本地环境',
-      '/docs/npm/npm基础命令',
-      '/docs/npm/npm源切换',
-      '/docs/npm/npx命令',
-      '/docs/npm/个人资料管理',
-      '/docs/npm/发布包',
-      '/docs/npm/故障修复',
+    '/docs/tool': [
+      '/docs/tool/vscode快捷使用教程',
+      '/docs/tool/eslint配置',
+      '/docs/tool/npm使用教程',
     ],
     '/docs/framework': [
       '/docs/framework/架构是什么',

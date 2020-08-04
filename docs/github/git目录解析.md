@@ -3,8 +3,6 @@ title: git目录解析
 date: "2019-4-1"
 ---
 
-> 为了了解git。了解git的原理，先从.git的文件
-
 ## 1.git的目录
 - hook
 - info
@@ -90,7 +88,6 @@ drwxr-xr-x 1 Hades 197121  0 2月   5 22:57 feature/
 ```
 
 ### objects:
-
 ```
 cd objects
 
