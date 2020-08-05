@@ -39,13 +39,15 @@ module.exports = {
         },
       ]
     },
-    { text: 'github理解', link: '/docs/github/git目录解析' },
     {
       text: '前端进阶', items: [
         { text: 'CSS样式', link: '/docs/css/css选择器和属性' },
         { text: 'ES6进阶', link: '/docs/javascript/ES6的基本类型' },
         {
           text: '开发利器', items: [
+            {
+              text: 'git', link: '/docs/tool/git使用教程'
+            },
             {
               text: 'vscode', link: '/docs/tool/vscode快捷使用教程'
             },
@@ -110,9 +112,10 @@ module.exports = {
       '/docs/javascript/JS执行上下文和闭包'
     ],
     '/docs/tool': [
+      '/docs/tool/git使用教程',
+      '/docs/tool/npm使用教程',
       '/docs/tool/vscode快捷使用教程',
       '/docs/tool/eslint配置',
-      '/docs/tool/npm使用教程',
     ],
     '/docs/framework': [
       '/docs/framework/架构是什么',

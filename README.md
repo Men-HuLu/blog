@@ -34,7 +34,7 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
    - `[Elasticsearch]` [Elasticsearch安装及使用](https://men-hulu.github.io/docs/elastic/1.Elasticsearch安装及使用.html)
  
  ## 开发工具
-  - `[代码管理]` [git是如何管理代码的?](https://men-hulu.github.io/docs/github/git目录解析.html)
+  - `[代码管理]` [git是如何管理代码的?](https://men-hulu.github.io/docs/tool/git使用教程.html)
   - `[npm使用教程]` [npm配置本地环境](https://men-hulu.github.io/docs/tool/npm使用教程.html)
   - `[vscode快捷使用教程]` [vscode快捷使用教程](https://men-hulu.github.io/docs/tool/vscode快捷使用教程.html)
   - `[eslint配置]` [eslint](https://men-hulu.github.io/docs/tool/eslint配置.html)
