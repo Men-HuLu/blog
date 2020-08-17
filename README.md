@@ -7,6 +7,8 @@ heroText: 闷葫芦的博客
 footer: MIT Licensed | Copyright © 2020 Men-HuLu
 ---
 
+域名已经迁移至[yuminjun.cn](http://uminjun.cn),本域名因网速等问题即将停止更新，新文章将在新域名上发布
+
  ## 戏言--取自电影 [《邪不压正》](https://www.bilibili.com/video/av36938060?from=search&seid=3681262953024404982)
 - 蓝青峰:正经人谁写日记啊!
 - 朱潜龙:是啊。
