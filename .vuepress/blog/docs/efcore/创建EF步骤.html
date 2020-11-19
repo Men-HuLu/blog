@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>创建EF步骤 | 闷葫芦博客</title>
+    <meta name="description" content="前端，算法和架构的博客">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.38a317da.css" as="style"><link rel="preload" href="/assets/js/app.e997cc90.js" as="script"><link rel="preload" href="/assets/js/2.d49b05b3.js" as="script"><link rel="preload" href="/assets/js/9.6fec0dd7.js" as="script"><link rel="prefetch" href="/assets/js/10.49c063da.js"><link rel="prefetch" href="/assets/js/11.552b3b86.js"><link rel="prefetch" href="/assets/js/12.23641e08.js"><link rel="prefetch" href="/assets/js/13.8f580d1c.js"><link rel="prefetch" href="/assets/js/14.2b1c44d8.js"><link rel="prefetch" href="/assets/js/15.f3974e3b.js"><link rel="prefetch" href="/assets/js/16.5b3a51bf.js"><link rel="prefetch" href="/assets/js/17.ce8f0260.js"><link rel="prefetch" href="/assets/js/18.39b91e2e.js"><link rel="prefetch" href="/assets/js/19.5ea230ef.js"><link rel="prefetch" href="/assets/js/20.22e6ca48.js"><link rel="prefetch" href="/assets/js/21.05b2c11e.js"><link rel="prefetch" href="/assets/js/22.49494c10.js"><link rel="prefetch" href="/assets/js/23.a8163b67.js"><link rel="prefetch" href="/assets/js/24.651e5d87.js"><link rel="prefetch" href="/assets/js/25.4fb309bb.js"><link rel="prefetch" href="/assets/js/26.861f864a.js"><link rel="prefetch" href="/assets/js/27.b657de93.js"><link rel="prefetch" href="/assets/js/28.250f40c3.js"><link rel="prefetch" href="/assets/js/29.ab96c409.js"><link rel="prefetch" href="/assets/js/3.176a9595.js"><link rel="prefetch" href="/assets/js/30.89630487.js"><link rel="prefetch" href="/assets/js/31.7d14720b.js"><link rel="prefetch" href="/assets/js/32.c73c6767.js"><link rel="prefetch" href="/assets/js/33.b18404dd.js"><link rel="prefetch" href="/assets/js/34.50988760.js"><link rel="prefetch" href="/assets/js/35.97e28b00.js"><link rel="prefetch" href="/assets/js/36.48fb3548.js"><link rel="prefetch" href="/assets/js/37.69d5cf0d.js"><link rel="prefetch" href="/assets/js/38.f451663e.js"><link rel="prefetch" href="/assets/js/39.00a80dad.js"><link rel="prefetch" href="/assets/js/4.4a8ff4f7.js"><link rel="prefetch" href="/assets/js/40.89ab949a.js"><link rel="prefetch" href="/assets/js/41.0d259d49.js"><link rel="prefetch" href="/assets/js/42.7ca6be97.js"><link rel="prefetch" href="/assets/js/43.5d14bd19.js"><link rel="prefetch" href="/assets/js/44.5423d055.js"><link rel="prefetch" href="/assets/js/45.f4e40829.js"><link rel="prefetch" href="/assets/js/46.c71f7650.js"><link rel="prefetch" href="/assets/js/47.1f831a61.js"><link rel="prefetch" href="/assets/js/48.6dfc1d6a.js"><link rel="prefetch" href="/assets/js/49.085cc8d6.js"><link rel="prefetch" href="/assets/js/5.8825949d.js"><link rel="prefetch" href="/assets/js/50.ec035b1d.js"><link rel="prefetch" href="/assets/js/51.5255f2ac.js"><link rel="prefetch" href="/assets/js/52.7773233e.js"><link rel="prefetch" href="/assets/js/53.c1735ca1.js"><link rel="prefetch" href="/assets/js/54.4854489e.js"><link rel="prefetch" href="/assets/js/55.71725707.js"><link rel="prefetch" href="/assets/js/56.8a7823a6.js"><link rel="prefetch" href="/assets/js/6.1f463e4f.js"><link rel="prefetch" href="/assets/js/7.c982c2e1.js"><link rel="prefetch" href="/assets/js/8.8b9e487b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.38a317da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">闷葫芦博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/efcore/创建EF步骤.html" class="active sidebar-link">创建EF步骤</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/efcore/冷门EF语句.html" class="sidebar-link">冷门EF语句</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1、在-visual-studio-2017-中创建新项目"><a href="#_1、在-visual-studio-2017-中创建新项目" class="header-anchor">#</a> 1、在 Visual Studio 2017 中创建新项目</h3> <ul><li>“文件”&gt;“新建”&gt;“项目”</li> <li>从左侧菜单中选择“已安装”&gt;“模板”&gt;“Visual C#”&gt;“.NET Core”。</li> <li>选择“ASP.NET Core Web 应用程序”。</li> <li>输入“EFGetStarted.AspNetCore.NewDb”作为名称，然后单击“确定”。</li> <li>在“新建 ASP.NET Core Web 应用程序”对话框中：</li></ul> <ol><li>确保在下拉列表中选择“.NET Core”和“ASP.NET Core 2.0”选项</li> <li>选择“Web 应用程序(模型视图控制器)”项目模板</li> <li>确保将“身份验证”设置为“无身份验证”</li> <li>单击“确定”</li></ol> <h3 id="_2、安装-entity-framework-core"><a href="#_2、安装-entity-framework-core" class="header-anchor">#</a> 2、安装 Entity Framework Core</h3> <p>工具”&gt;“NuGet 包管理器”&gt;“包管理器控制台”</p> <h6 id="_1-安装数据库提供程序"><a href="#_1-安装数据库提供程序" class="header-anchor">#</a> 1.安装数据库提供程序</h6> <div class="language- line-numbers-mode"><pre class="language-text"><code>MsSql
+运行：Install-Package Microsoft.EntityFrameworkCore.SqlServer
+MySql
+运行：
+柚子：Install-Package Pomelo.EntityFrameworkCore.MySql
+或者
+官方:Install-Package MySql.Data.EntityFrameworkCore -Version 8.0.11
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h6 id="_2-安装程序包管理器控制台"><a href="#_2-安装程序包管理器控制台" class="header-anchor">#</a> 2.安装程序包管理器控制台</h6> <p>==运行：Install-Package Microsoft.EntityFrameworkCore.Tools==</p> <h6 id="_3-安装设计包"><a href="#_3-安装设计包" class="header-anchor">#</a> 3.安装设计包</h6> <div class="language- line-numbers-mode"><pre class="language-text"><code>运行：Install-Package Microsoft.EntityFrameworkCore.Design
+数据据库提供程序设计包 (EF Core 2.0 不再需要)
+MsSql
+运行：Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design
+MySql
+运行：Install-Package Pomelo.EntityFrameworkCore.MySql.Design
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><p>随着官方版本的更新，可能会出现报错,在此我展示我使用的版本。
+<img src="https://men-hulu.github.io/efcore/1-1.png" alt="image"></p></blockquote> <h3 id="db-first——从现有数据库创建模型"><a href="#db-first——从现有数据库创建模型" class="header-anchor">#</a> DB First——从现有数据库创建模型</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>MySql
+运行：Scaffold-DbContext -Connection &quot;server=111.231.132.***;port=3306;uid=ymj;pwd=******;database=test;charset=utf8;sslmode=none;&quot; -Provider &quot;MySql.Data.EntityFrameworkCore&quot; -OutputDir &quot;Models&quot;
+
+MsSql
+运行：Scaffold-DbContext -Connection &quot;server=111.231.132.***;port=3306;uid=ymj;pwd=******;database=test;charset=utf8;sslmode=none;&quot; -Provider &quot;Microsoft.EntityFrameworkCore.SqlServer&quot; -OutputDir &quot;Models&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>从数据库更新DbContext和实体的类型
+Scaffold-DbContext 
+-Connection &lt;String&gt;	数据库的连接字符串。
+-Provider &lt;String&gt;	要使用的提供程序。 （例如 Microsoft.EntityFrameworkCore.SqlServer)
+-OutputDir &lt;String &gt;	要将文件放入的目录。 路径是相对于项目目录。
+-Context &lt;String &gt;	若要生成的 dbcontext 名称。
+-Schemas &lt;String[]&gt;	要生成实体类型的表架构。
+-Tables &lt;String[]&gt;	要生成实体类型的表。
+-DataAnnotations	使用属性来配置该模型 （如果可能）。 如果省略，则使用仅 fluent API。
+-UseDatabaseNames	使用直接从数据库表和列名称。
+-Force 覆盖现有文件。
+
+从迁移中生成的 SQL 脚本
+Script-Migration
+-From &lt;String&gt;	开始迁移。 默认值为 0 （初始数据库）
+-To &lt;String&gt;	结束的迁移。 默认到最后一个迁移
+-Idempotent	生成可以在任何迁移的数据库使用的脚本
+-Output &lt;String&gt;	要将结果写入的文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="code-first——从模型生成到数据库"><a href="#code-first——从模型生成到数据库" class="header-anchor">#</a> Code First——从模型生成到数据库</h3> <h4 id="_1、创建模型"><a href="#_1、创建模型" class="header-anchor">#</a> 1、创建模型</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>namespace Model
+{
+    public class SchoolContext : DbContext
+    {
+        public SchoolContext(DbContextOptions&lt;SchoolContext&gt; options) : base(options)
+        {
+        }
+
+        public DbSet&lt;Course&gt; Courses { get; set; }
+        public DbSet&lt;Enrollment&gt; Enrollments { get; set; }
+        public DbSet&lt;Student&gt; Students { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity&lt;Course&gt;().ToTable(&quot;Course&quot;);
+            modelBuilder.Entity&lt;Enrollment&gt;().ToTable(&quot;Enrollment&quot;);
+            modelBuilder.Entity&lt;Student&gt;().ToTable(&quot;Student&quot;);
+        }
+    }
+    public class Student
+    {
+        public int ID { get; set; }
+        public string LastName { get; set; }
+        public string FirstMidName { get; set; }
+        public DateTime EnrollmentDate { get; set; }
+
+        public ICollection&lt;Enrollment&gt; Enrollments { get; set; }
+    }
+    public enum Grade
+    {
+        A, B, C, D, F
+    }
+
+    public class Enrollment
+    {
+        public int EnrollmentID { get; set; }
+        public int CourseID { get; set; }
+        public int StudentID { get; set; }
+        public Grade? Grade { get; set; }
+
+        public Course Course { get; set; }
+        public Student Student { get; set; }
+    }
+
+    public class Course
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int CourseID { get; set; }
+        public string Title { get; set; }
+        public int Credits { get; set; }
+
+        public ICollection&lt;Enrollment&gt; Enrollments { get; set; }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div><h4 id="_1-2、startup文件注入上下文"><a href="#_1-2、startup文件注入上下文" class="header-anchor">#</a> 1.2、Startup文件注入上下文</h4> <p>EF Core在版本 2.0 中，引入了一种在依赖关系注入中注册自定义 DbContext 类型的新方法，即以透明形式引入可重用 DbContext 实例的池。
+要使用 DbContext 池，请在服务注册期间使用 AddDbContextPool 而不是 AddDbContext</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public void ConfigureServices(IServiceCollection services)
+{
+services.AddDbContextPool&lt;SchoolContext&gt;(options =&gt;
+options.UseMySql(Configuration.GetConnectionString(&quot;DefaultConnection&quot;)));
+
+services.AddMvc().AddJsonOptions(options =&gt;
+options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="_1-3、appsettings-json文件添加连接字符串"><a href="#_1-3、appsettings-json文件添加连接字符串" class="header-anchor">#</a> 1.3、appsettings.json文件添加连接字符串</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;ConnectionStrings&quot;: {
+    &quot;test&quot;: &quot;server=111.231.132.***;port=3306;uid=ymj;pwd=******;database=test;charset=utf8;sslmode=none;&quot;
+  },
+  &quot;Logging&quot;: {
+    &quot;LogLevel&quot;: {
+      &quot;Default&quot;: &quot;Warning&quot;
+    }
+  },
+  &quot;AllowedHosts&quot;: &quot;*&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>2.1、为迁移搭建基架
+
+运行：Add-Migration InitialCreate
+
+2.2、将新迁移应用到数据库
+
+运行：Update-Database
+
+EF Core 2.0 NuGet命令
+
+Get-Help about_EntityFrameworkCore 获取EF Core命令帮助
+
+添加一个迁移数据库 迁移的名称 目录（及其子命名空间）路径是相对于项目目录。 默认值为&quot;Migrations&quot;。
+Add-Migration -Name &lt;String&gt; -OutputDir &lt;String&gt;	
+Add-Migration InitialCreate 第一次执行初始化用这个
+
+删除上次的迁移数据库 不检查以查看迁移是否已应用到数据库。
+Remove-Migration -Force
+
+目标迁移。 如果为&quot;0&quot;，将恢复所有迁移。 默认到最后一个迁移。
+Update-Database 
+Update-Database LastGoodMigration 还原迁移
+
+删除数据库 显示的数据库会被丢弃，但没有删除它
+Drop-Database -WhatIf
+
+Get-DbContext 获取有关 DbContext 类型的信息
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Men-HuLu/blog/edit/master/docs/efcore/创建EF步骤.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">更新于: </span> <span class="time">2020-7-22 9:36:41 ├F10: AM┤</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docs/efcore/冷门EF语句.html">
+          冷门EF语句
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e997cc90.js" defer></script><script src="/assets/js/2.d49b05b3.js" defer></script><script src="/assets/js/9.6fec0dd7.js" defer></script>
+  </body>
+</html>

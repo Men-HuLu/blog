@@ -62,6 +62,9 @@ module.exports = {
   ],
   displayAllHeaders: true,
   sidebar: {
+    '/docs/gossip': [
+      '/docs/gossip/追剧半泽直树',
+    ],
     '/docs/net': [
       '/docs/net/类的构造和特性',
       '/docs/net/类型转换',

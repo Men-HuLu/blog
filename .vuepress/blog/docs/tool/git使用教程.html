@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git使用教程 | 闷葫芦博客</title>
+    <meta name="description" content="前端，算法和架构的博客">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.38a317da.css" as="style"><link rel="preload" href="/assets/js/app.e997cc90.js" as="script"><link rel="preload" href="/assets/js/2.d49b05b3.js" as="script"><link rel="preload" href="/assets/js/53.c1735ca1.js" as="script"><link rel="prefetch" href="/assets/js/10.49c063da.js"><link rel="prefetch" href="/assets/js/11.552b3b86.js"><link rel="prefetch" href="/assets/js/12.23641e08.js"><link rel="prefetch" href="/assets/js/13.8f580d1c.js"><link rel="prefetch" href="/assets/js/14.2b1c44d8.js"><link rel="prefetch" href="/assets/js/15.f3974e3b.js"><link rel="prefetch" href="/assets/js/16.5b3a51bf.js"><link rel="prefetch" href="/assets/js/17.ce8f0260.js"><link rel="prefetch" href="/assets/js/18.39b91e2e.js"><link rel="prefetch" href="/assets/js/19.5ea230ef.js"><link rel="prefetch" href="/assets/js/20.22e6ca48.js"><link rel="prefetch" href="/assets/js/21.05b2c11e.js"><link rel="prefetch" href="/assets/js/22.49494c10.js"><link rel="prefetch" href="/assets/js/23.a8163b67.js"><link rel="prefetch" href="/assets/js/24.651e5d87.js"><link rel="prefetch" href="/assets/js/25.4fb309bb.js"><link rel="prefetch" href="/assets/js/26.861f864a.js"><link rel="prefetch" href="/assets/js/27.b657de93.js"><link rel="prefetch" href="/assets/js/28.250f40c3.js"><link rel="prefetch" href="/assets/js/29.ab96c409.js"><link rel="prefetch" href="/assets/js/3.176a9595.js"><link rel="prefetch" href="/assets/js/30.89630487.js"><link rel="prefetch" href="/assets/js/31.7d14720b.js"><link rel="prefetch" href="/assets/js/32.c73c6767.js"><link rel="prefetch" href="/assets/js/33.b18404dd.js"><link rel="prefetch" href="/assets/js/34.50988760.js"><link rel="prefetch" href="/assets/js/35.97e28b00.js"><link rel="prefetch" href="/assets/js/36.48fb3548.js"><link rel="prefetch" href="/assets/js/37.69d5cf0d.js"><link rel="prefetch" href="/assets/js/38.f451663e.js"><link rel="prefetch" href="/assets/js/39.00a80dad.js"><link rel="prefetch" href="/assets/js/4.4a8ff4f7.js"><link rel="prefetch" href="/assets/js/40.89ab949a.js"><link rel="prefetch" href="/assets/js/41.0d259d49.js"><link rel="prefetch" href="/assets/js/42.7ca6be97.js"><link rel="prefetch" href="/assets/js/43.5d14bd19.js"><link rel="prefetch" href="/assets/js/44.5423d055.js"><link rel="prefetch" href="/assets/js/45.f4e40829.js"><link rel="prefetch" href="/assets/js/46.c71f7650.js"><link rel="prefetch" href="/assets/js/47.1f831a61.js"><link rel="prefetch" href="/assets/js/48.6dfc1d6a.js"><link rel="prefetch" href="/assets/js/49.085cc8d6.js"><link rel="prefetch" href="/assets/js/5.8825949d.js"><link rel="prefetch" href="/assets/js/50.ec035b1d.js"><link rel="prefetch" href="/assets/js/51.5255f2ac.js"><link rel="prefetch" href="/assets/js/52.7773233e.js"><link rel="prefetch" href="/assets/js/54.4854489e.js"><link rel="prefetch" href="/assets/js/55.71725707.js"><link rel="prefetch" href="/assets/js/56.8a7823a6.js"><link rel="prefetch" href="/assets/js/6.1f463e4f.js"><link rel="prefetch" href="/assets/js/7.c982c2e1.js"><link rel="prefetch" href="/assets/js/8.8b9e487b.js"><link rel="prefetch" href="/assets/js/9.6fec0dd7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.38a317da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">闷葫芦博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/tool/git使用教程.html" class="active sidebar-link">git使用教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_1-git目录解析及存储结构" class="sidebar-link">1.git目录解析及存储结构</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_2-git的help操作" class="sidebar-link">2.git的help操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_3-config配置命-init新建和clone克隆仓库" class="sidebar-link">3.config配置命,init新建和clone克隆仓库</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_4-basic增删修查操作-工作区到暂存区" class="sidebar-link">4.basic增删修查操作 工作区到暂存区</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_5-commit操作-暂存区到版本库" class="sidebar-link">5.commit操作 暂存区到版本库</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_6-branch分支操作" class="sidebar-link">6.branch分支操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_7-local同步github-本地同步远端" class="sidebar-link">7.local同步GitHub 本地同步远端</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_8-commit操作rebase操作" class="sidebar-link">8.commit操作rebase操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_9-tag标签" class="sidebar-link">9.tag标签</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_10-log和gitk操作" class="sidebar-link">10.log和gitk操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_11-stash紧急任务" class="sidebar-link">11.stash紧急任务</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_12-checkout和reset文件恢复" class="sidebar-link">12.checkout和reset文件恢复</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_13-diff差异和show查看文件" class="sidebar-link">13.diff差异和show查看文件</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_14-gitignore忽略跟踪文件" class="sidebar-link">14.gitignore忽略跟踪文件</a></li></ul></li><li><a href="/docs/tool/npm使用教程.html" class="sidebar-link">npm使用教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_1-npm配置本地环境" class="sidebar-link">1.npm配置本地环境</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_2-npm基础命令" class="sidebar-link">2.npm基础命令</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_3-npm源切换" class="sidebar-link">3.npm源切换</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_4-npx命令" class="sidebar-link">4.npx命令</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_5-个人资料管理" class="sidebar-link">5.个人资料管理</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_6-发布包" class="sidebar-link">6.发布包</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_7-故障修复" class="sidebar-link">7.故障修复</a></li></ul></li><li><a href="/docs/tool/vscode快捷使用教程.html" class="sidebar-link">vscode使用教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#键盘快捷键" class="sidebar-link">键盘快捷键</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#鼠标快捷键" class="sidebar-link">鼠标快捷键</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#代码片段" class="sidebar-link">代码片段</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#code命令行使用" class="sidebar-link">code命令行使用</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#我的配置" class="sidebar-link">我的配置</a></li></ul></li><li><a href="/docs/tool/eslint配置.html" class="sidebar-link">react eslint配置</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-git目录解析及存储结构"><a href="#_1-git目录解析及存储结构" class="header-anchor">#</a> 1.git目录解析及存储结构</h2> <blockquote><p>git的目录结构如下</p></blockquote> <ul><li>hook:存放一些shell脚本</li> <li>info:存放仓库的一些信息</li> <li>logs:保存所有更新的引用记录</li> <li>objects:存储对象的目录,本地仓库，git中对象分为三种：commit对象，tree对象(多叉树)，blob对象</li> <li>refs：存储指向branch的最近一次commit对象的指针</li> <li>COMMIT_EDITMSG:最新提交的一次Commit Message，git系统不会用到，给用户一个参考</li> <li>config: git仓库配置文件</li> <li>description：仓库的描述信息，主要给gitweb等git托管系统使用</li> <li>gitk.cache</li> <li>HEAD:该文件表示当前本地签出的分支</li> <li>index: 暂存区（stage），一个二进制文件</li> <li>packed-refs: 当ref文件过多时会打包到packed-refs</li></ul> <h3 id="工作区到暂存区"><a href="#工作区到暂存区" class="header-anchor">#</a> 工作区到暂存区</h3> <p><img src="https://git-scm.com/book/en/v2/images/lifecycle.png" alt="image"></p> <p>你工作目录下的每一个文件都不外乎这两种状态：已跟踪或未跟踪。
+从工作区到暂存区无疑有4种状态</p> <ul><li>未跟踪</li> <li>未修改</li> <li>已修改</li> <li>暂存区</li></ul> <h3 id="暂存区提交到版本库"><a href="#暂存区提交到版本库" class="header-anchor">#</a> 暂存区提交到版本库</h3> <p><img src="https://git-scm.com/book/en/v2/images/commit-and-tree.png" alt="image"></p> <h4 id="如图所示"><a href="#如图所示" class="header-anchor">#</a> 如图所示:</h4> <h5 id="git-仓库中主要有3类对象"><a href="#git-仓库中主要有3类对象" class="header-anchor">#</a> Git 仓库中主要有3类对象</h5> <ul><li>commit:提交时间的快照,包含1个树和提交信息</li> <li>tree：树里边可以包含树和二进制,图中只包含文件</li> <li>blob：二进制文件</li></ul> <h2 id="_2-git的help操作"><a href="#_2-git的help操作" class="header-anchor">#</a> 2.git的help操作</h2> <blockquote><p>要学会git,一是了解git原理,二是要学会git help学会不懂的时候查询</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code> git help
+ git help -a        //git命令的帮助列表
+ git help -g        //git概念的帮助列表
+ git help --web log //网页查看log帮助文档
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>git help</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//输入这个命令的时候git帮我们分了这么大致几类
+
+项目的新建（创建一个工作区）
+clone      Clone a repository into a new directory
+init       Create an empty Git repository or reinitialize an existing one
+
+当前工作区的操作
+ add        Add file contents to the index
+ mv         Move or rename a file, a directory, or a symlink
+ reset      Reset current HEAD to the specified state
+ rm         Remove files from the working tree and from the index
+
+检查提交历史和状态
+ bisect     Use binary search to find the commit that introduced a bug
+ grep       Print lines matching a pattern
+ log        Show commit logs
+ show       Show various types of objects
+ status     Show the working tree status
+分支,标记和调整公共历史
+branch     List, create, or delete branches
+checkout    Switch branches or restore working tree files
+commit     Record changes to the repository
+diff       Show changes between commits, commit and working tree, etc
+merge      Join two or more development histories together
+rebase     Reapply commits on top of another base tip
+tag        Create, list, delete or verify a tag object signed with GPG
+远程操作（工作流）
+fetch      Download objects and refs from another repository
+pull       Fetch from and integrate with another repository or a local branch
+push       Update remote refs along with associated objects
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>git help -a   git常用命令</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>   add                  Add file contents to the index
+   am                   Apply a series of patches from a mailbox
+   archive              Create an archive of files from a named tree
+   bisect               Use binary search to find the commit that introduced a bug
+   branch               List, create, or delete branches
+   bundle               Move objects and refs by archive
+   checkout             Switch branches or restore working tree files
+   cherry-pick          Apply the changes introduced by some existing commits
+   citool               Graphical alternative to git-commit
+   clean                Remove untracked files from the working tree
+   clone                Clone a repository into a new directory
+   commit               Record changes to the repository
+   describe             Give an object a human readable name based on an available ref
+   diff                 Show changes between commits, commit and working tree, etc
+   fetch                Download objects and refs from another repository
+   format-patch         Prepare patches for e-mail submission
+   gc                   Cleanup unnecessary files and optimize the local repository
+   gitk                 The Git repository browser
+   grep                 Print lines matching a pattern
+   gui                  A portable graphical interface to Git
+   init                 Create an empty Git repository or reinitialize an existing one
+   log                  Show commit logs
+   merge                Join two or more development histories together
+   mv                   Move or rename a file, a directory, or a symlink
+   notes                Add or inspect object notes
+   pull                 Fetch from and integrate with another repository or a local branch
+   push                 Update remote refs along with associated objects
+   range-diff           Compare two commit ranges (e.g. two versions of a branch)
+   rebase               Reapply commits on top of another base tip
+   reset                Reset current HEAD to the specified state
+   revert               Revert some existing commits
+   rm                   Remove files from the working tree and from the index
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>git help -g    git指南</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>   attributes          Defining attributes per path
+   cli                 Git command-line interface and conventions
+   core-tutorial       A Git core tutorial for developers
+   cvs-migration       Git for CVS users
+   diffcore            Tweaking diff output
+   everyday            A useful minimum set of commands for Everyday Git
+   glossary            A Git Glossary
+   hooks               Hooks used by Git
+   ignore              Specifies intentionally untracked files to ignore
+   modules             Defining submodule properties
+   namespaces          Git namespaces
+   repository-layout    Git Repository Layout
+   revisions           Specifying revisions and ranges for Git
+   tutorial            A tutorial introduction to Git
+   tutorial-2          A tutorial introduction to Git: part two
+   workflows           An overview of recommended workflows with Git
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_3-config配置命-init新建和clone克隆仓库"><a href="#_3-config配置命-init新建和clone克隆仓库" class="header-anchor">#</a> 3.config配置命,init新建和clone克隆仓库</h2> <h3 id="config配置"><a href="#config配置" class="header-anchor">#</a> config配置</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>config全局配置
+git config --global user.name 'Men-HuLu'
+git config --global user.email '15705850186@163.com'
+
+config作用域配置
+git config --local   //local只对某个仓库
+git config --global  //global当前用户全局有效
+git config --system  //系统所有登录用户有效
+
+显示当前的Git配置
+git config --list --local  
+git config --list --global 
+git config --list --system 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="新建仓库git-init"><a href="#新建仓库git-init" class="header-anchor">#</a> 新建仓库git init</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.把已有项目代码纳入git管理
+cd 项目代码所在文件夹
+git init
+
+2.新建的项目直接用Git管理
+git init your_project
+cd your_project
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="克隆仓库git-clone"><a href="#克隆仓库git-clone" class="header-anchor">#</a> 克隆仓库git clone</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>默认使用版本库文件名
+ git clone https://github.com/Men-HuLu/git_learning.git 
+ 
+使用自定义名称
+ git clone https://github.com/Men-HuLu/git_learning.git learing
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_4-basic增删修查操作-工作区到暂存区"><a href="#_4-basic增删修查操作-工作区到暂存区" class="header-anchor">#</a> 4.basic增删修查操作 工作区到暂存区</h2> <blockquote><p>工作区到暂存区操作，代码操作无疑是增删修查，工作区到暂存区操作git代码操作也是同理也是增删修查</p></blockquote> <h3 id="_1-查"><a href="#_1-查" class="header-anchor">#</a> 1.查</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git status      //c查看文件状态
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_2-增"><a href="#_2-增" class="header-anchor">#</a> 2.增</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git add index.html      //添加指定文件
+git add *               //添加所有文件
+git add *.css           //添加所有匹配的文件
+
+以下是新增也是修改
+git add -A              //提交所有变化
+git add -u              //已经被跟踪的文件保存到暂存区
+git add .               //提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_3-删"><a href="#_3-删" class="header-anchor">#</a> 3.删</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git rm readme           //删除指定文件
+git rm --cached [file]  //停止追踪指定文件，但该文件会保留在工作区
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_4-改"><a href="#_4-改" class="header-anchor">#</a> 4.改</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.文件内容修改
+git add -A              //提交所有变化
+git add -u              //已经被跟踪的文件保存到暂存区
+git add .               //提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+
+2.文件名修改
+mv readme readme.md
+git add readme.md
+git rm readme
+等于
+git mv readme readme.md
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="_5-commit操作-暂存区到版本库"><a href="#_5-commit操作-暂存区到版本库" class="header-anchor">#</a> 5.commit操作 暂存区到版本库</h2> <h3 id="_1-暂存区到版本库"><a href="#_1-暂存区到版本库" class="header-anchor">#</a> 1.暂存区到版本库</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git commit -m'版本提交信息'
+git commit [file1] [file2] ... -m [message]     //提交暂存区的指定文件到仓库区
+
+git commit -a                       //提交工作区自上次commit之后的变化，直接到仓库区
+git commit -a -m'版本提交信息'      //保存到暂存区，并且提交版本库
+git commit -am'版本提交信息'        //保存到暂存区，并且提交版本库
+
+git commit -v      //提交时显示所有diff信息
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_2-修改最新的提交信息"><a href="#_2-修改最新的提交信息" class="header-anchor">#</a> 2.修改最新的提交信息</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git commit --amend      //修改后:wq保存
+git commit --amend -m [message]       //使用一次新的commit，替代上一次提交,改写上一次commit的提交信息
+git commit --amend [file1] [file2] -m [message]       
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_6-branch分支操作"><a href="#_6-branch分支操作" class="header-anchor">#</a> 6.branch分支操作</h2> <h3 id="查看分支"><a href="#查看分支" class="header-anchor">#</a> 查看分支</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git branch          //查看分支
+git branch -v       //查看本地分支
+git branch -a       //查看线上线下所有分支
+git branch -vv      //查看本地和线上分支关联
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="切换分支"><a href="#切换分支" class="header-anchor">#</a> 切换分支</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git checkout [branch-name]      //切换branch-name
+git checkout -                  //切换到上一分支
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="新增分支"><a href="#新增分支" class="header-anchor">#</a> 新增分支</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git branch [branch-name]    //新建一个分支
+
+
+git checkout -b new_branch  //建新分支new_branch并切换到new_branch
+等于
+git branch new_branch
+git checkout new_branch
+
+
+git checkout -b new_branch old_branch    //基于old_branch创建新分支new_branch
+等于
+git checkout old_branch     
+git branch new_branch
+git checkout new_branch
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="合并分支"><a href="#合并分支" class="header-anchor">#</a> 合并分支</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git merge [branch]              //合并指定分支到当前分支
+git cherry-pick [commit]        //选择一个commit，合并进当前分支
+
+
+合并分支的三种方式
+1.fast-forward
+git merge [branch]
+2.--no-ff
+git merge --no-ff -m &quot;merge with no-ff&quot; dev
+3.--squash
+git merge --squash -m &quot;merge with --squash&quot;
+
+
+全部使用一端
+git merge -Xours develop
+git merge -Xtheirs develop
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="删除分支"><a href="#删除分支" class="header-anchor">#</a> 删除分支</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git branch -d [branch-name]     //删除分支
+git branch -D [branch-name]
+
+git push origin --delete [branch-name]  //删除远端分支
+git push origin :master
+git branch -dr [remote/branch]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="追踪分支"><a href="#追踪分支" class="header-anchor">#</a> 追踪分支</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git branch [branch-name]        //新建一个分支，与指定的远程分支建立追踪关系
+git branch --set-upstream [branch] [remote-branch]      //建立追踪关系，在现有分支与指定的远程分支之间
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="分离头指针"><a href="#分离头指针" class="header-anchor">#</a> 分离头指针</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git branch 具体commit哈希值
+进行修改提交没有分支，时间长了会被git当垃圾处理掉
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_7-local同步github-本地同步远端"><a href="#_7-local同步github-本地同步远端" class="header-anchor">#</a> 7.local同步GitHub 本地同步远端</h2> <h3 id="创建ssh公私钥"><a href="#创建ssh公私钥" class="header-anchor">#</a> 创建SSH公私钥</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+为了github实现ssh同步
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="查看远端库"><a href="#查看远端库" class="header-anchor">#</a> 查看远端库</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git remote -v
+git remote show &lt;主机名&gt;        //详细信息
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="添加远端库"><a href="#添加远端库" class="header-anchor">#</a> 添加远端库</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git remote add 路径             //默认为origin
+git remote add origin git@github.com:Men-HuLu/ReactApp.git
+git remote add github 路径      //
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="删除远端库"><a href="#删除远端库" class="header-anchor">#</a> 删除远端库</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git remote rm github
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="重命名远端库"><a href="#重命名远端库" class="header-anchor">#</a> 重命名远端库</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git remote rename &lt;原主机名&gt; &lt;新主机名&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="拉去远端"><a href="#拉去远端" class="header-anchor">#</a> 拉去远端</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git pull origin
+等于
+git fetch origin 或 git fetch &lt;远程主机名&gt; &lt;分支名&gt;
+git merge master origin/master 或 git rebase origin/master
+
+1.fetch
+git fetch origin master     //git fetch &lt;远程主机名&gt; &lt;分支名&gt;
+git branch -r               //查看远端分支
+git checkout -b newBrach origin/master  //创建newBrach分支基于origin/master
+git merge master origin/master 或 git rebase origin/master
+
+2.pull
+git pull origin next:master     //git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+//远程分支是与当前分支合并，则冒号后面的部分可以省略
+
+
+如果合并需要采用rebase模式，可以使用--rebase选项
+git pull --rebase &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+
+
+加上参数 -p 就会在本地删除远程已经删除的分支
+git pull -p
+等同于下面的命令
+git fetch --prune origin 
+git fetch -p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="推送远端"><a href="#推送远端" class="header-anchor">#</a> 推送远端</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git push origin master      //git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;
+git push origin --all       //所有分支推送到远端
+git push -u origin master   //使用-u选项指定一个默认主机，这样后面就可以不加任何参数
+
+git push origin --tags      //git push不会推送标签（tag），除非使用--tags选项
+
+git push origin :master             //删除远端分支
+git push origin --delete master   //删除远端分支
+
+git push origin        //存在追踪关系,本地分支和远程分支省略。
+
+远程主机的版本比本地版本更新，推送时Git会报错,
+先在本地做git pull合并差异，然后再推送到远程主机
+
+如果你一定要推送，可以使用--force选项（不建议）
+git push --force origin
+
+存在关联时省略写分支名
+git push origin 分支    //完整的git语句
+git push origin         //存在关联，忽略分支名
+git push                //默认origin可以不写
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="本地分支关联远程分支-追踪关系"><a href="#本地分支关联远程分支-追踪关系" class="header-anchor">#</a> 本地分支关联远程分支(追踪关系)</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>查看
+git branch -vv                                  //查看本地和线上分支关联
+
+都已存在，在关联
+git branch -u origin/分支名                     //本地当前分支关联远端分支
+git branch --set-upstream-to=origin/分支名      //本地当前分支关联远端分支
+
+远端存在
+git checkout --track origin/branch_name         //本地没有，这时候本地会新建一个分支名叫branch_name，本地跟踪origin/branch_name
+git checkout -b new_branch_name branch_name     //branch_name如果是远端分支，可以取不一样的new_branch_name名称track跟踪远端分支
+
+本地存在
+git push --set-upstream origin branch_name      //远端没有，这时候远端会新建一个分支名叫branch_name，本地跟踪origin/branch_name
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="_8-commit操作rebase操作"><a href="#_8-commit操作rebase操作" class="header-anchor">#</a> 8.commit操作rebase操作</h2> <h3 id="amend其实也是rebase操作"><a href="#amend其实也是rebase操作" class="header-anchor">#</a> amend其实也是rebase操作</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git commit --amend      //修改后:wq保存
+git commit --amend -m [message]       //使用一次新的commit，替代上一次提交,改写上一次commit的提交信息
+git commit --amend [file1] [file2] -m [message]       
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="commit历史提交信息修改-实际上是变基操作"><a href="#commit历史提交信息修改-实际上是变基操作" class="header-anchor">#</a> commit历史提交信息修改(实际上是变基操作)</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>步骤一
+git rebase -i  变基的父亲   //实际上就是变基重新提交commit
+
+会显示如下
+pick 1d2a4a0 分离头指针
+
+# Rebase 640a1e3..1d2a4a0 onto 640a1e3 (1 command)
+#
+# Commands:
+# p, pick &lt;commit&gt; = use commit
+# r, reword &lt;commit&gt; = use commit, but edit the commit message
+# e, edit &lt;commit&gt; = use commit, but stop for amending
+# s, squash &lt;commit&gt; = use commit, but meld into previous commit
+# f, fixup &lt;commit&gt; = like &quot;squash&quot;, but discard this commit's log message
+# x, exec &lt;command&gt; = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop &lt;commit&gt; = remove commit
+# l, label &lt;label&gt; = label current HEAD with a name
+# t, reset &lt;label&gt; = reset HEAD to a label
+# m, merge [-C &lt;commit&gt; | -c &lt;commit&gt;] &lt;label&gt; [# &lt;oneline&gt;]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c &lt;commit&gt; to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+
+
+步骤二
+reword 1d2a4a0 commitInfo
+：wq
+
+步骤三
+修改commitInfo
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Wed Feb 6 21:17:58 2019 +0800
+#
+# interactive rebase in progress; onto 640a1e3
+# Last command done (1 command done):
+#    reword 4da30d2 分离头指针1
+# No commands remaining.
+# You are currently editing a commit during a rebase.
+#
+# Changes to be committed:
+#       new file:   .gitignore
+#       deleted:    0.txt
+#       modified:   index.html
+#
+~
+:wq
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><h4 id="把几个连续的commit合并成1个"><a href="#把几个连续的commit合并成1个" class="header-anchor">#</a> 把几个连续的commit合并成1个</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>git rebase -i parent
+
+要合并的pick不改
+被合并的改为squash
+：wq
+
+写上要合并的原因
+：wq
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="选取几个commit合并成1个"><a href="#选取几个commit合并成1个" class="header-anchor">#</a> 选取几个commit合并成1个</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>git rebase -i parent
+
+改变顺序，如：
+
+pick ds4554
+pick d24sds
+pick dsa343
+pick 34344f
+=&gt;
+pick ds4554
+s    dsa343
+s    34344f
+pick d24sds
+
+git rebase --continue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><blockquote><p>对父commit进行合并，父commit又有分支，这时会有两个父commit</p></blockquote> <h2 id="_9-tag标签"><a href="#_9-tag标签" class="header-anchor">#</a> 9.tag标签</h2> <h3 id="查看提交历史版本记录"><a href="#查看提交历史版本记录" class="header-anchor">#</a> 查看提交历史版本记录</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>提交历史
+git status              //显示有变更的文件
+
+git log                 //显示当前分支的版本历史
+git log --all           //所有的分支记录
+git log --all --graph   //图形化分支
+git log -n2 --oneline   //最近2个提交记录
+git log --oneline --all -n4 --graph
+
+git log --stat          //显示commit历史，以及每次commit发生变更的文件
+git log -S [keyword]    //搜索提交历史，根据关键词
+
+
+//文件
+git log -p [file]       //显示指定文件相关的每一次diff
+
+git log --follow [file] //显示某个文件的版本历史，包括文件改名
+git whatchanged [file]
+
+git blame [file]        显示指定文件是什么人在什么时间修改过
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="图形查看版本历史"><a href="#图形查看版本历史" class="header-anchor">#</a> 图形查看版本历史</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>gitk            //图形查看当前分支
+gitk  --all     //图形查看所有分支
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_10-log和gitk操作"><a href="#_10-log和gitk操作" class="header-anchor">#</a> 10.log和gitk操作</h2> <h3 id="查看标签"><a href="#查看标签" class="header-anchor">#</a> 查看标签</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git tag                 //显示已有标签
+git tag -l 'v1.8*'      //符合条件的标签
+git show [tag]          //查看tag信息
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="新建标签"><a href="#新建标签" class="header-anchor">#</a> 新建标签</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git tag [tag]               //新建一个tag在当前commit
+git tag [tag] [commit]      //新建一个tag在指定commit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="删除标签"><a href="#删除标签" class="header-anchor">#</a> 删除标签</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git tag -d [tag]            //例子git tag -d v1.4-lw
+git push origin :refs/tags/[tagName]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="检出标签"><a href="#检出标签" class="header-anchor">#</a> 检出标签</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git checkout 2.0.0 迁出标签         //不创建新分支，分离头指针
+git checkout -b [branch] [tag]      //git checkout -b version2 v2.0.0,新建一个分支，指向某个tag
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="提交标签"><a href="#提交标签" class="header-anchor">#</a> 提交标签</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git show [tag]              //查看tag信息
+git push [remote] [tag]     //提交指定tag
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_11-stash紧急任务"><a href="#_11-stash紧急任务" class="header-anchor">#</a> 11.stash紧急任务</h2> <h3 id="_1-先保存到贮藏区"><a href="#_1-先保存到贮藏区" class="header-anchor">#</a> 1.先保存到贮藏区</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git add -u  //保存
+git stash   //存放到贮藏区
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_2-贮藏区查看"><a href="#_2-贮藏区查看" class="header-anchor">#</a> 2.贮藏区查看</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git stash list
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-从贮藏区拿出"><a href="#_3-从贮藏区拿出" class="header-anchor">#</a> 3.从贮藏区拿出</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git stash apply             //不删除stash
+git stash apply stash@{1}   //取出第二个(索引为1),不删除stash
+git stash pop               //删除stash
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_4-从贮藏区删除"><a href="#_4-从贮藏区删除" class="header-anchor">#</a> 4.从贮藏区删除</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git stash clear                 //贮藏区全部清空
+git stash drop stash@{$num}     //丢弃stash@{$num}存储，从列表中删除这个存储       
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_12-checkout和reset文件恢复"><a href="#_12-checkout和reset文件恢复" class="header-anchor">#</a> 12.checkout和reset文件恢复</h2> <h3 id="变工作区-暂存区复原到工作区"><a href="#变工作区-暂存区复原到工作区" class="header-anchor">#</a> 变工作区(暂存区复原到工作区)</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git checkout -- 文件名
+git checkout [commit] [file]        //恢复某个commit的指定文件到暂存区和工作区
+git checkout .                      //恢复暂存区的所有文件到工作区
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="变暂存区-暂存区复原版本库"><a href="#变暂存区-暂存区复原版本库" class="header-anchor">#</a> 变暂存区(暂存区复原版本库)</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>复原到暂存区
+git reset HEAD 将暂存区复原到HEAD
+git reset --hard HEAD 将工作区和暂存区复原到HEAD
+
+撤销提交
+git reset [commit]（工作区不变）
+git reset --hard [commit]
+
+重置
+git reset --keep [commit]           //重置当前HEAD为指定commit，但保持暂存区和工作区不变
+
+新建一个commit，用来撤销指定commit
+后者的所有变化都将被前者抵消，并且应用到当前分支
+git revert [commit]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><blockquote><p>要复原暂存区使用reset,要变工作区使用checkout</p></blockquote> <h2 id="_13-diff差异和show查看文件"><a href="#_13-diff差异和show查看文件" class="header-anchor">#</a> 13.diff差异和show查看文件</h2> <h3 id="_1-工作区与暂存区的差异"><a href="#_1-工作区与暂存区的差异" class="header-anchor">#</a> 1.工作区与暂存区的差异</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git diff
+git diff  -- 文件名  //指定具体文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_2-暂存区与head的差异"><a href="#_2-暂存区与head的差异" class="header-anchor">#</a> 2.暂存区与HEAD的差异</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git diff --cached
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-提交版本比较差异"><a href="#_3-提交版本比较差异" class="header-anchor">#</a> 3.提交版本比较差异</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git diff 77rgr834 3fre8uej //两个版本的差异
+git diff 77rgr834 3fre8uej --文件
+
+git diff HEAD           //显示暂存区和工作区的差异
+git diff HEAD HEAD^     //HEAD和HEAD父亲比较
+git diff HEAD HEAD~1
+
+git diff HEAD HEAD^^    //HEAD和HEAD父亲的父亲比较
+git diff HEAD HEAD~2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_4-show查看文件看"><a href="#_4-show查看文件看" class="header-anchor">#</a> 4.show查看文件看</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git show                //显示某次提交的元数据和内容变化 
+git show --name-only [commit] //显示某次提交发生变化的文件
+git show [commit]:[filename]    //显示某次提交时，某个文件的内容
+git reflog      //显示当前分支的最近几次提交
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="_14-gitignore忽略跟踪文件"><a href="#_14-gitignore忽略跟踪文件" class="header-anchor">#</a> 14.gitignore忽略跟踪文件</h2> <h3 id="文件-gitignore-的格式规范如下："><a href="#文件-gitignore-的格式规范如下：" class="header-anchor">#</a> 文件 .gitignore 的格式规范如下：</h3> <ul><li>所有空行或者以 ＃ 开头的行都会被 Git 忽略。</li> <li></li> <li>可以使用标准的 glob 模式匹配。</li> <li></li> <li>匹配模式可以以（/）开头防止递归。</li> <li></li> <li>匹配模式可以以（/）结尾指定目录。</li> <li></li> <li>要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。</li></ul> <p>.gitignore 文件的例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># no .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Men-HuLu/blog/edit/master/docs/tool/git使用教程.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">更新于: </span> <span class="time">2020-10-19 8:31:23 ├F10: AM┤</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docs/tool/npm使用教程.html">
+          npm使用教程
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e997cc90.js" defer></script><script src="/assets/js/2.d49b05b3.js" defer></script><script src="/assets/js/53.c1735ca1.js" defer></script>
+  </body>
+</html>
