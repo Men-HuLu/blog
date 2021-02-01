@@ -19,15 +19,13 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
 > 闷葫芦昵称的来自本人性格,随着长大,心也隔离,跨出那道门越来越难。此博客记录我学习成长历程的博客，以便获取成果的反馈。[逃避虽可耻但有用](https://www.bilibili.com/bangumi/play/ep246180?from=search&seid=15988493679209625045)
 
 
- ## 读书笔记
+ ## 生活·读书
   - [我的书单](https://book.douban.com/people/165032053/)
-  - [2020年读书笔记](https://yuminjun.cn/docs/notes/刻意练习.html)
-    - 推荐书单:潜规则,万历十五年,血酬定律,事实,刻意练习
-
- ## 生活
+    - [读书笔记](https://yuminjun.cn/docs/notes/刻意练习.html)
+    - 奇怪书单推荐:潜规则,万历十五年,血酬定律,事实
   - [追剧《半泽直树》](https://yuminjun.cn/docs/gossip/追剧半泽直树.html)
-
-
+  - [2020年度总结](https://yuminjun.cn/docs/gossip/2020年度总结.html)
+  - [产品手记课程学习](https://yuminjun.cn/docs/gossip/产品手记课程学习.html)
 
  ## 架构学习之路——摘录自极客时间
   - `[架构的定义]` [2020年的第一章](https://yuminjun.cn/docs/framework/架构是什么.html)
@@ -58,6 +56,7 @@ footer: MIT Licensed | Copyright © 2020 Men-HuLu
   - [Phodal Huang](https://www.phodal.com)
   - [ihoey](https://blog.ihoey.com/)
   - [马丁·克莱普曼](https://martin.kleppmann.com/)
+  - [翻墙](http://luyiminggonnabeok.cn/)
 
  ## 近期学习计划
   - 1.编程设计模式设计整理

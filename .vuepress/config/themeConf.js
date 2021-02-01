@@ -64,6 +64,8 @@ module.exports = {
   sidebar: {
     '/docs/gossip': [
       '/docs/gossip/追剧半泽直树',
+      '/docs/gossip/2020年度总结',
+      '/docs/gossip/产品手记课程学习',
     ],
     '/docs/net': [
       '/docs/net/类的构造和特性',
