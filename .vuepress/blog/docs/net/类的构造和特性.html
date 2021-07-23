@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>类的构造和特性 | 闷葫芦博客</title>
+    <meta name="description" content="茫茫人海,有缘相识,欢迎到此">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.38a317da.css" as="style"><link rel="preload" href="/assets/js/app.87a322b1.js" as="script"><link rel="preload" href="/assets/js/2.d49b05b3.js" as="script"><link rel="preload" href="/assets/js/48.13794bb4.js" as="script"><link rel="prefetch" href="/assets/js/10.3c6b06f7.js"><link rel="prefetch" href="/assets/js/11.c3f672e1.js"><link rel="prefetch" href="/assets/js/12.d64ecb25.js"><link rel="prefetch" href="/assets/js/13.63290cce.js"><link rel="prefetch" href="/assets/js/14.92265d00.js"><link rel="prefetch" href="/assets/js/15.22f2cbad.js"><link rel="prefetch" href="/assets/js/16.5b3a51bf.js"><link rel="prefetch" href="/assets/js/17.ce8f0260.js"><link rel="prefetch" href="/assets/js/18.b07a3881.js"><link rel="prefetch" href="/assets/js/19.fbd3b021.js"><link rel="prefetch" href="/assets/js/20.b60583b7.js"><link rel="prefetch" href="/assets/js/21.50d01f64.js"><link rel="prefetch" href="/assets/js/22.70afba08.js"><link rel="prefetch" href="/assets/js/23.14c94791.js"><link rel="prefetch" href="/assets/js/24.7669f837.js"><link rel="prefetch" href="/assets/js/25.938e1652.js"><link rel="prefetch" href="/assets/js/26.4e454bc5.js"><link rel="prefetch" href="/assets/js/27.9ad5757c.js"><link rel="prefetch" href="/assets/js/28.6ffa7297.js"><link rel="prefetch" href="/assets/js/29.0c9e9fdf.js"><link rel="prefetch" href="/assets/js/3.6c0414e3.js"><link rel="prefetch" href="/assets/js/30.752299e6.js"><link rel="prefetch" href="/assets/js/31.56a062e2.js"><link rel="prefetch" href="/assets/js/32.0e996dfd.js"><link rel="prefetch" href="/assets/js/33.f1e818ed.js"><link rel="prefetch" href="/assets/js/34.ee11a92d.js"><link rel="prefetch" href="/assets/js/35.c072d6f7.js"><link rel="prefetch" href="/assets/js/36.125fcdf6.js"><link rel="prefetch" href="/assets/js/37.205964b3.js"><link rel="prefetch" href="/assets/js/38.6f7a602a.js"><link rel="prefetch" href="/assets/js/39.d96471e2.js"><link rel="prefetch" href="/assets/js/4.4a8ff4f7.js"><link rel="prefetch" href="/assets/js/40.0b3f38f0.js"><link rel="prefetch" href="/assets/js/41.5dd8ebd3.js"><link rel="prefetch" href="/assets/js/42.c36e7ea9.js"><link rel="prefetch" href="/assets/js/43.b970100a.js"><link rel="prefetch" href="/assets/js/44.2df2e8a7.js"><link rel="prefetch" href="/assets/js/45.3fdc4bd4.js"><link rel="prefetch" href="/assets/js/46.8899ed27.js"><link rel="prefetch" href="/assets/js/47.5ca55e66.js"><link rel="prefetch" href="/assets/js/49.9039d70b.js"><link rel="prefetch" href="/assets/js/5.c37b41af.js"><link rel="prefetch" href="/assets/js/50.b82eb16e.js"><link rel="prefetch" href="/assets/js/51.d9ce7e9b.js"><link rel="prefetch" href="/assets/js/52.86c21c84.js"><link rel="prefetch" href="/assets/js/53.f93b2620.js"><link rel="prefetch" href="/assets/js/54.846c3b5b.js"><link rel="prefetch" href="/assets/js/55.81fa36a9.js"><link rel="prefetch" href="/assets/js/56.25163bc0.js"><link rel="prefetch" href="/assets/js/57.4e8219e8.js"><link rel="prefetch" href="/assets/js/58.690e50e6.js"><link rel="prefetch" href="/assets/js/59.d8fecfdc.js"><link rel="prefetch" href="/assets/js/6.1f463e4f.js"><link rel="prefetch" href="/assets/js/60.86850449.js"><link rel="prefetch" href="/assets/js/7.c982c2e1.js"><link rel="prefetch" href="/assets/js/8.8b9e487b.js"><link rel="prefetch" href="/assets/js/9.ee423eaf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.38a317da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">闷葫芦博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/net/类的构造和特性.html" class="active sidebar-link">类的构造和特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/类的构造和特性.html#_1-类的构造" class="sidebar-link">1.类的构造</a></li><li class="sidebar-sub-header"><a href="/docs/net/类的构造和特性.html#_2-类的特性-类的封装，继承，多态" class="sidebar-link">2.类的特性--类的封装，继承，多态</a></li><li class="sidebar-sub-header"><a href="/docs/net/类的构造和特性.html#_3-异常处理" class="sidebar-link">3.异常处理</a></li></ul></li><li><a href="/docs/net/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/docs/net/集合 泛型 迭代器原理.html" class="sidebar-link">集合 泛型 迭代器原理</a></li><li><a href="/docs/net/正则表达式.html" class="sidebar-link">正则表达式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/net/流文件和垃圾回收.html" class="sidebar-link">流文件和垃圾回收</a></li><li><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html" class="sidebar-link">委托 事件 反射 枚举 扩展方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#委托" class="sidebar-link">委托</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#反射" class="sidebar-link">反射</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#枚举" class="sidebar-link">枚举</a></li><li class="sidebar-sub-header"><a href="/docs/net/委托 事件 反射 枚举 扩展方法.html#扩展方法" class="sidebar-link">扩展方法</a></li></ul></li><li><a href="/docs/net/发布订阅模式（事件）.html" class="sidebar-link">单利模式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/net/抽象函和接口.html" class="sidebar-link">抽象函和接口</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/net/序列化与反序列化.html" class="sidebar-link">序列化与反序列化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_1-xml" class="sidebar-link">1.xml</a></li><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_2-json" class="sidebar-link">2.json</a></li><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_3-二进制" class="sidebar-link">3.二进制</a></li><li class="sidebar-sub-header"><a href="/docs/net/序列化与反序列化.html#_4-xml练习" class="sidebar-link">4.xml练习</a></li></ul></li><li><a href="/docs/net/定制特性Attribute和句柄IntPtr.html" class="sidebar-link">定制特性Attribute和句柄IntPtr</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/定制特性Attribute和句柄IntPtr.html#定制特性attribute" class="sidebar-link">定制特性Attribute</a></li><li class="sidebar-sub-header"><a href="/docs/net/定制特性Attribute和句柄IntPtr.html#c-关键字-intptr" class="sidebar-link">C# 关键字 IntPtr</a></li></ul></li><li><a href="/docs/net/Linq入门详解.html" class="sidebar-link">Linq入门详解</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#_1-隐式类型、匿名类型、对象初始化器" class="sidebar-link">1.隐式类型、匿名类型、对象初始化器</a></li><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#_2-lambda表达式，func委托" class="sidebar-link">2.Lambda表达式，Func委托</a></li><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#_3-扩展方法" class="sidebar-link">3.扩展方法</a></li><li class="sidebar-sub-header"><a href="/docs/net/Linq入门详解.html#二、各种linq示例" class="sidebar-link">二、各种LINQ示例</a></li></ul></li><li><a href="/docs/net/线程、异步、进程.html" class="sidebar-link">线程、异步、进程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/线程、异步、进程.html#线程简例-thread-：" class="sidebar-link">线程简例(Thread)：</a></li><li class="sidebar-sub-header"><a href="/docs/net/线程、异步、进程.html#进程概念" class="sidebar-link">进程概念</a></li></ul></li><li><a href="/docs/net/socket原理.html" class="sidebar-link">socket原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/net/socket原理.html#同步" class="sidebar-link">同步</a></li><li class="sidebar-sub-header"><a href="/docs/net/socket原理.html#异步改进" class="sidebar-link">异步改进</a></li></ul></li><li><a href="/docs/net/单利模式.html" class="sidebar-link">单利模式</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-类的构造"><a href="#_1-类的构造" class="header-anchor">#</a> 1.类的构造</h2> <h4 id="类的成员："><a href="#类的成员：" class="header-anchor">#</a> 类的成员：</h4> <h5 id="_1-字段：公共字段-temp-ps-方法私有字段temp"><a href="#_1-字段：公共字段-temp-ps-方法私有字段temp" class="header-anchor">#</a> 1.字段：公共字段_temp  ps:方法私有字段temp</h5> <h5 id="_2-属性：temp-对字段-temp的封装-对类外"><a href="#_2-属性：temp-对字段-temp的封装-对类外" class="header-anchor">#</a> 2.属性：Temp 对字段_temp的封装  对类外</h5> <h5 id="_3-索引：-似于属性，只能作用在实例对象上"><a href="#_3-索引：-似于属性，只能作用在实例对象上" class="header-anchor">#</a> 3.索引： 似于属性，只能作用在实例对象上</h5> <h5 id="_4-方法："><a href="#_4-方法：" class="header-anchor">#</a> 4.方法：</h5> <h5 id="_5-构造函数："><a href="#_5-构造函数：" class="header-anchor">#</a> 5.构造函数：</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>例子
+class SampleCollection&lt;T&gt;
+{
+    //字段
+    public string _temp;
+    //属性
+    public string Temp{get;set;};
+    //索引
+   private T[] arr = new T[100];
+   public T this[int i]
+   {
+      get { return arr[i]; }
+      set { arr[i] = value; }
+   }
+   //方法
+    public void SetTemp(string temp)
+    {
+        _temp = temp;
+    }
+   //构造函数
+    SampleCollection()
+    {
+        _temp = &quot;temp&quot;;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><hr> <h4 id="静态类：（abstract-seal）抽象密封类（不能实例和继承）"><a href="#静态类：（abstract-seal）抽象密封类（不能实例和继承）" class="header-anchor">#</a> 静态类：（abstract seal）抽象密封类（不能实例和继承）</h4> <ol><li>所有成员都是静态成员，不是所有静态成员都在静态类中</li> <li>面对类，而不是对象</li> <li>静态成员直接通过类名+属性名访问</li> <li>一个静态成员改变了，其他访问到的也修改了
+如所有实例公用的一个数值</li></ol> <h5 id="静态构造函数："><a href="#静态构造函数：" class="header-anchor">#</a> 静态构造函数：</h5> <ol><li>只要有静态成员编译器就给静态构造函数</li> <li>没有修饰词（默认private），无参构造函数</li> <li>不能手动调用，是在第一次使用时调用</li></ol> <h5 id="单利模式："><a href="#单利模式：" class="header-anchor">#</a> 单利模式：</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class Singleton
+{
+        private static Singleton instance;
+        private Singleton()
+        {
+        }
+        public static Singleton GetInstance()
+        {
+                if(instance==null)
+                {
+                        instance=new Singleton();
+                }
+                return instance;
+        }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><hr> <h5 id="类的构造函数："><a href="#类的构造函数：" class="header-anchor">#</a> 类的构造函数：</h5> <ul><li>挡一个子类继承父类以后，该子类中的所有构造函数都会先调用一次父类的构造函数</li> <li>在没有特殊指定构造函数的时候，会调用默认的无参构造函数</li> <li>自己加构造函数后，默认无参构造函数会没有</li> <li>修饰public，private（一般不用）</li> <li>构造函数不能被继承，故子类在后面加base调用父类构造函数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>public  student（string name， int age）：base（name）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>类在后面加this调用自己构造函数</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>public  student（string name， int age，string sex， int id=0）
+public  student（string name， int age）：this（name，age，“男”，0）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="修饰符："><a href="#修饰符：" class="header-anchor">#</a> 修饰符：</h4> <h5 id="类的成员访问修饰符："><a href="#类的成员访问修饰符：" class="header-anchor">#</a> 类的成员访问修饰符：</h5> <ul><li>pubilc //公共</li> <li>protected internal //子类或程序集内</li> <li>internal //程序集内</li> <li>protected //类和子类</li> <li>private //类内 （不写为private ）</li></ul> <h5 id="类修饰符："><a href="#类修饰符：" class="header-anchor">#</a> 类修饰符：</h5> <ol><li>pubilc</li> <li>internal</li></ol> <h5 id="注意-访问级别约束："><a href="#注意-访问级别约束：" class="header-anchor">#</a> ==注意==访问级别约束：</h5> <p>1.子类不能比父类高
+2.类中属性和字段不能比类高
+3.方法的访问不能比参数和返回值高</p> <h4 id="new"><a href="#new" class="header-anchor">#</a> new</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>1）new 运算符：用于创建对象和调用构造函数。这种大家都比较熟悉，没什么好说的了。
+2）new 修饰符：在用作修饰符时，new 关键字可以显式隐藏从基类继承的成员。
+3）new 约束：用于在泛型声明中约束可能用作类型参数的参数的类型。 
+  DerivedB b = new DerivedB();
+  b.Invoke();//调用DerivedB的Invoke方法，输出：2
+  Console.WriteLine(b.x.ToString());//输出DerivedB的成员x值：2
+  BaseA a = b;
+  a.Invoke();//调用BaseA的Invoke方法，输出：1
+  a.TrueValue = 3;//调用BaseA的属性TrueValue，修改BaseA的成员x的值
+  Console.WriteLine(a.x.ToString());//输出BaseA的成员x的值：3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="局部类型-partial"><a href="#局部类型-partial" class="header-anchor">#</a> 局部类型 partial</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>public partial class Form1 : Form
+{
+    public Form1()
+     {
+         InitializeComponent();
+     }
+}
+局部类型适用于以下情况：
+(1) 类型特别大，不宜放在一个文件中实现。
+(2) 一个类型中的一部分代码为自动化工具生成的代码，不宜与我们自己编写的代码混合在一起。
+(3) 需要多人合作编写一个类。局部类型的限制
+(1) 局部类型只适用于类、接口、结构，不支持委托和枚举。
+(2) 同一个类型的各个部分必须都有修饰符 partial。
+(3) 使用局部类型时，一个类型的各个部分必须位于相同的命名空间中。
+(4) 一个类型的各个部分必须被同时编译。
+
+1. 局部类型的注意点
+
+(1) 关键字partial是一个上下文关键字，只有和 class、struct、interface 放在一起时才有关键字的含义。因此partial的引入不会影响现有代码中名称为partial的变量。
+(2) 局部类型的各个部分一般是分开放在几个不同的.cs文件中，但C#编译器允许我们将他们放在同一文件中。
+
+2. 局部类型的应用特性
+在局部类型上的特性具有“累加”效应。
+[Attribute1, Attribute2(&quot;Hello&quot;)]
+partial class Class1{}
+
+[Attribute3, Attribute2(&quot;Exit&quot;)]
+partial class Class1{}
+
+相当于
+[Attribute1, Attribute2(&quot;Hello&quot;), Attribute3, Attribute2(&quot;Exit&quot;)]
+class Class1 {}
+
+注：Attribute2属性允许在类上多次使用。
+
+3. 局部类型上的修饰符
+
+(1) 一个类型的各个部分上的访问修饰符必须维持一致性。
+(2) 如果一个类型有一个部分使用了abstract修饰符，那么整个类都将被视为抽象类。
+(3) 如果一个类型有一个部分使用了 sealed 修饰符，那么整个类都将被视为密封类。
+(4) 一个类的各个部分不能使用相互矛盾的修饰符，比如不能在一个部分上使用abstract，又在另一个部分上使用sealed。
+
+4. 局部类型的基类和接口
+(1) 一个类型的各个部分上指定的基类必须一致。某个部分可以不指定基类，但如果指定，则必须相同。
+(2) 局部类型上的接口具有“累加”效应。
+partial class Class2: Iinterface1, Iinterface2 {}
+partial class Class2: Iinterface3 {}
+partial class Class2: Iinterface2 {}
+相当于
+class Class2: Iinterface1, Iinterface2, Iinterface3 {}
+时间会记录下一切。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div><h2 id="_2-类的特性-类的封装，继承，多态"><a href="#_2-类的特性-类的封装，继承，多态" class="header-anchor">#</a> 2.类的特性--类的封装，继承，多态</h2> <h4 id="类的封装："><a href="#类的封装：" class="header-anchor">#</a> 类的封装：</h4> <ol><li>属性封装字段</li> <li>方法的多个参数封装成一个对象</li> <li>讲一堆代码封装到一个方法中</li> <li>将一些功能封装到几个类中</li> <li>一些功能相同的代码封装到一个程序集中</li></ol> <h4 id="类的继承"><a href="#类的继承" class="header-anchor">#</a> 类的继承</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>特性：1.继承单根性，只能有一个父类2.传递性
+好处：1.代码重用，类的多态
+里氏替换原则：
+base class基类  derived class 派生类
+parent class 父类 child class 子类
+parent  **=new parent ()    
+parent  **=new child ()
+child ***=（child ）**
+或者 child ***= **  as child（不会报错 ，null）
+if(** is child )判断是不是child的父类
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="类的多态："><a href="#类的多态：" class="header-anchor">#</a> 类的多态：</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>父类方法：public virtual void say（）{}
+子类方法：
+1.public override void say（）{}
+2.public new virtual  void say（）{}  //表示添加一个全新的方法
+parent 实例名=new child（）
+实例名.say()
+1.调用子类方法，2调用父类方法
+child 实例名=new child（）
+实例名.say()
+1.调用子类方法，2调用子类方法
+var 实例名=new child（）
+实例名.say()
+1.调用子类方法，2调用子类方法
+1.根据后面类型决定，2.根据前面类型决定
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h4 id="重载"><a href="#重载" class="header-anchor">#</a> 重载</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>1、参数类型、个数、顺序至少有一个不相同。 
+2、不能重载只有返回值不同的方法名。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_3-异常处理"><a href="#_3-异常处理" class="header-anchor">#</a> 3.异常处理</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>异常
+try{}
+catch（）
+{}
+finaly{}
+
+抛出异常
+System. ArgumentException 参数无效时的异常
+System. FileNotFoundException 访问磁盘上不存在的文件时引用的异常
+System. IndexOutOfRangeException试图访问索引超出数组界限的数组元素时引发的异常
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Men-HuLu/blog/edit/master/docs/net/类的构造和特性.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">更新于: </span> <span class="time">2020-6-13 10:51:02 ├F10: AM┤</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docs/net/类型转换.html">
+          类型转换
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.87a322b1.js" defer></script><script src="/assets/js/2.d49b05b3.js" defer></script><script src="/assets/js/48.13794bb4.js" defer></script>
+  </body>
+</html>

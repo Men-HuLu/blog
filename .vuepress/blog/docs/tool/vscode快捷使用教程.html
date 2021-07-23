@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vscode使用教程 | 闷葫芦博客</title>
+    <meta name="description" content="茫茫人海,有缘相识,欢迎到此">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.38a317da.css" as="style"><link rel="preload" href="/assets/js/app.87a322b1.js" as="script"><link rel="preload" href="/assets/js/2.d49b05b3.js" as="script"><link rel="preload" href="/assets/js/59.d8fecfdc.js" as="script"><link rel="prefetch" href="/assets/js/10.3c6b06f7.js"><link rel="prefetch" href="/assets/js/11.c3f672e1.js"><link rel="prefetch" href="/assets/js/12.d64ecb25.js"><link rel="prefetch" href="/assets/js/13.63290cce.js"><link rel="prefetch" href="/assets/js/14.92265d00.js"><link rel="prefetch" href="/assets/js/15.22f2cbad.js"><link rel="prefetch" href="/assets/js/16.5b3a51bf.js"><link rel="prefetch" href="/assets/js/17.ce8f0260.js"><link rel="prefetch" href="/assets/js/18.b07a3881.js"><link rel="prefetch" href="/assets/js/19.fbd3b021.js"><link rel="prefetch" href="/assets/js/20.b60583b7.js"><link rel="prefetch" href="/assets/js/21.50d01f64.js"><link rel="prefetch" href="/assets/js/22.70afba08.js"><link rel="prefetch" href="/assets/js/23.14c94791.js"><link rel="prefetch" href="/assets/js/24.7669f837.js"><link rel="prefetch" href="/assets/js/25.938e1652.js"><link rel="prefetch" href="/assets/js/26.4e454bc5.js"><link rel="prefetch" href="/assets/js/27.9ad5757c.js"><link rel="prefetch" href="/assets/js/28.6ffa7297.js"><link rel="prefetch" href="/assets/js/29.0c9e9fdf.js"><link rel="prefetch" href="/assets/js/3.6c0414e3.js"><link rel="prefetch" href="/assets/js/30.752299e6.js"><link rel="prefetch" href="/assets/js/31.56a062e2.js"><link rel="prefetch" href="/assets/js/32.0e996dfd.js"><link rel="prefetch" href="/assets/js/33.f1e818ed.js"><link rel="prefetch" href="/assets/js/34.ee11a92d.js"><link rel="prefetch" href="/assets/js/35.c072d6f7.js"><link rel="prefetch" href="/assets/js/36.125fcdf6.js"><link rel="prefetch" href="/assets/js/37.205964b3.js"><link rel="prefetch" href="/assets/js/38.6f7a602a.js"><link rel="prefetch" href="/assets/js/39.d96471e2.js"><link rel="prefetch" href="/assets/js/4.4a8ff4f7.js"><link rel="prefetch" href="/assets/js/40.0b3f38f0.js"><link rel="prefetch" href="/assets/js/41.5dd8ebd3.js"><link rel="prefetch" href="/assets/js/42.c36e7ea9.js"><link rel="prefetch" href="/assets/js/43.b970100a.js"><link rel="prefetch" href="/assets/js/44.2df2e8a7.js"><link rel="prefetch" href="/assets/js/45.3fdc4bd4.js"><link rel="prefetch" href="/assets/js/46.8899ed27.js"><link rel="prefetch" href="/assets/js/47.5ca55e66.js"><link rel="prefetch" href="/assets/js/48.13794bb4.js"><link rel="prefetch" href="/assets/js/49.9039d70b.js"><link rel="prefetch" href="/assets/js/5.c37b41af.js"><link rel="prefetch" href="/assets/js/50.b82eb16e.js"><link rel="prefetch" href="/assets/js/51.d9ce7e9b.js"><link rel="prefetch" href="/assets/js/52.86c21c84.js"><link rel="prefetch" href="/assets/js/53.f93b2620.js"><link rel="prefetch" href="/assets/js/54.846c3b5b.js"><link rel="prefetch" href="/assets/js/55.81fa36a9.js"><link rel="prefetch" href="/assets/js/56.25163bc0.js"><link rel="prefetch" href="/assets/js/57.4e8219e8.js"><link rel="prefetch" href="/assets/js/58.690e50e6.js"><link rel="prefetch" href="/assets/js/6.1f463e4f.js"><link rel="prefetch" href="/assets/js/60.86850449.js"><link rel="prefetch" href="/assets/js/7.c982c2e1.js"><link rel="prefetch" href="/assets/js/8.8b9e487b.js"><link rel="prefetch" href="/assets/js/9.ee423eaf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.38a317da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">闷葫芦博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/tool/git使用教程.html" class="sidebar-link">git使用教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_1-git目录解析及存储结构" class="sidebar-link">1.git目录解析及存储结构</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_2-git的help操作" class="sidebar-link">2.git的help操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_3-config配置命-init新建和clone克隆仓库" class="sidebar-link">3.config配置命,init新建和clone克隆仓库</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_4-basic增删修查操作-工作区到暂存区" class="sidebar-link">4.basic增删修查操作 工作区到暂存区</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_5-commit操作-暂存区到版本库" class="sidebar-link">5.commit操作 暂存区到版本库</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_6-branch分支操作" class="sidebar-link">6.branch分支操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_7-local同步github-本地同步远端" class="sidebar-link">7.local同步GitHub 本地同步远端</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_8-commit操作rebase操作" class="sidebar-link">8.commit操作rebase操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_9-tag标签" class="sidebar-link">9.tag标签</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_10-log和gitk操作" class="sidebar-link">10.log和gitk操作</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_11-stash紧急任务" class="sidebar-link">11.stash紧急任务</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_12-checkout和reset文件恢复" class="sidebar-link">12.checkout和reset文件恢复</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_13-diff差异和show查看文件" class="sidebar-link">13.diff差异和show查看文件</a></li><li class="sidebar-sub-header"><a href="/docs/tool/git使用教程.html#_14-gitignore忽略跟踪文件" class="sidebar-link">14.gitignore忽略跟踪文件</a></li></ul></li><li><a href="/docs/tool/npm使用教程.html" class="sidebar-link">npm使用教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_1-npm配置本地环境" class="sidebar-link">1.npm配置本地环境</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_2-npm基础命令" class="sidebar-link">2.npm基础命令</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_3-npm源切换" class="sidebar-link">3.npm源切换</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_4-npx命令" class="sidebar-link">4.npx命令</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_5-个人资料管理" class="sidebar-link">5.个人资料管理</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_6-发布包" class="sidebar-link">6.发布包</a></li><li class="sidebar-sub-header"><a href="/docs/tool/npm使用教程.html#_7-故障修复" class="sidebar-link">7.故障修复</a></li></ul></li><li><a href="/docs/tool/vscode快捷使用教程.html" class="active sidebar-link">vscode使用教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#键盘快捷键" class="sidebar-link">键盘快捷键</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#鼠标快捷键" class="sidebar-link">鼠标快捷键</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#代码片段" class="sidebar-link">代码片段</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#code命令行使用" class="sidebar-link">code命令行使用</a></li><li class="sidebar-sub-header"><a href="/docs/tool/vscode快捷使用教程.html#我的配置" class="sidebar-link">我的配置</a></li></ul></li><li><a href="/docs/tool/eslint配置.html" class="sidebar-link">react eslint配置</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="键盘快捷键"><a href="#键盘快捷键" class="header-anchor">#</a> 键盘快捷键</h2> <h3 id="_1-面板交互"><a href="#_1-面板交互" class="header-anchor">#</a> 1.面板交互</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>Ctrl+Shift+P        //命令⾯板
+Ctrl+o              //打开文件
+Ctrl+R              //打开最近文件
+
+Ctrl+Shift+E        //文件资源管理器
+Ctrl+Shift+F        //文件搜索
+Ctrl+Shift+G        //代码git管理
+Ctrl+Shift+D        //启动和调试
+Ctrl+Shift+X        //扩展
+ctrl+shift+y        //控制台显示
+
+Ctrl+K Ctrl+S       //自定义快捷键
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_2-代码键盘操作"><a href="#_2-代码键盘操作" class="header-anchor">#</a> 2.代码键盘操作</h3> <h4 id="_1-光标移动"><a href="#_1-光标移动" class="header-anchor">#</a> 1.光标移动</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>Ctrl+左右方向       //单词句首句末
+Home建              //句首
+End 键              //句末
+Ctrl+Shift+\        //代码方括号始末
+Ctrl+Home/End       //是移动到⽂档的第⼀⾏或者最后⼀⾏
+ctrl+U              //撤销光标移动
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="_2-文本选择"><a href="#_2-文本选择" class="header-anchor">#</a> 2.文本选择</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>alt+上下方向            //选择代码（选择行上下移动）
+ctrl+shift+左右方向键   //代码选择（光标在单词中间）
+shift+上下方向键        //代码选择（跨行选择一行）
+Shift+Home/end          //选择光标前一整行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_3-代码注释"><a href="#_3-代码注释" class="header-anchor">#</a> 3.代码注释</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ctrl+/          //代码注释
+alt+shift+F     //代码格式化
+Ctrl+F          //选中行代码格式化
+ctrl+[          //缩进
+ctrl+]          //拉开
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_4-其他未绑定的一些"><a href="#_4-其他未绑定的一些" class="header-anchor">#</a> 4.其他未绑定的一些</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>转置游标处的字符
+转换为⼤写
+转换为小写
+合并⾏
+⾏排序
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_5-多个光标"><a href="#_5-多个光标" class="header-anchor">#</a> 5.多个光标</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>alt+鼠标点击                //创建光标
+shift+alt+上下⽅向键        //在代码上方复制相同代码
+ctrl+alt+上下⽅向键     //在当前光标上下创建新光标（加上光标移动）
+
+ctrl+D                  //先按选择一个,再按把附近的相同的选中,生成多光标
+选择代码行+Alt+Shift+i      //行最后生成光标
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_6-文件与符号之间的跳转"><a href="#_6-文件与符号之间的跳转" class="header-anchor">#</a> 6.文件与符号之间的跳转</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ctrl+tab 然后松掉tab        //切换当前打开文档
+ctrl+P                      //打开文档(enter打开)
+ctrl+enter                  //新窗口打开
+ctrl+g                      //输入行号
+Ctrl+Shift+O                //能够看到当前⽂件⾥的所有符号
+Ctrl+Shift+O(再加上:)       //能够看到当前⽂件⾥的所有符号,并且分类
+Cmd + T                     //多个文档,搜索这些⽂件⾥的符号
+
+F12                         //跳转到函数的定义处(TypeScript,有函数的接⼝定义)
+Cmd + F12                   //跳转到函数的实现的位置(TypeScript)
+
+Shift + F12                 //查看引用(js也行)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="_7-折叠代码"><a href="#_7-折叠代码" class="header-anchor">#</a> 7.折叠代码</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>Ctrl+Shift+{        //折叠代码
+Ctrl+Shift+}        //扩展代码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_8-单⽂件搜索"><a href="#_8-单⽂件搜索" class="header-anchor">#</a> 8.单⽂件搜索</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ctrl +F         //单文件搜索
+ctrl+shift+f    //多文件搜索
+f3/shift+f3     //ctrl +F搜索后快速跳转
+alt+c           //是否启用⼤⼩写敏感
+alt+w           //是否启用全单词匹配
+alt+r           //是否启用正则表达式
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>1. &gt;（⼤于号） ，⽤于显示所有的命令。
+2. @ ，⽤于显示和跳转⽂件中的“符号”（Symbols），在@符号后添加冒号：则可以把符号们按类别归类。
+3. #号，⽤于显示和跳转⼯作区中的“符号”（Symbols）。
+4. ：（冒号）， ⽤于跳转到当前⽂件中的某⼀⾏。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="鼠标快捷键"><a href="#鼠标快捷键" class="header-anchor">#</a> 鼠标快捷键</h2> <h4 id="_1-文本选择"><a href="#_1-文本选择" class="header-anchor">#</a> 1.文本选择</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>双击左键两次选单词
+三次左键这⼀⾏代码
+四次左键整个⽂档
+
+单击行号,选一行
+上下移动,就能选择多行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_2-⽂本编辑"><a href="#_2-⽂本编辑" class="header-anchor">#</a> 2.⽂本编辑</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>点击选择块代码拖动
+鼠标移到单词上,按ctrl，可以看到函数的实现
+Ctrl + ⿏标左键(超链接)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_3-多光标"><a href="#_3-多光标" class="header-anchor">#</a> 3.多光标</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>按鼠标中间
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_4-快速预览"><a href="#_4-快速预览" class="header-anchor">#</a> 4.快速预览</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>Ctrl+空格键
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_5-参数预览"><a href="#_5-参数预览" class="header-anchor">#</a> 5.参数预览</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>Ctrl+Shift+Space        //参数预览
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_6-快速修复"><a href="#_6-快速修复" class="header-anchor">#</a> 6.快速修复</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>点击⻩⾊的灯泡图标
+Ctrl + .
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_7-重构"><a href="#_7-重构" class="header-anchor">#</a> 7.重构</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>函数或变量上按F2,出现的地⽅就都会被修改.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="代码片段"><a href="#代码片段" class="header-anchor">#</a> 代码片段</h2> <h4 id="_1-配置用户代码片段-configure-user-snippets"><a href="#_1-配置用户代码片段-configure-user-snippets" class="header-anchor">#</a> 1.配置用户代码片段&quot;Configure User Snippets&quot;</h4> <h4 id="_2-选择一个语言json"><a href="#_2-选择一个语言json" class="header-anchor">#</a> 2.选择一个语言JSON</h4> <p>JavaScript</p> <p>{
+&quot;Print to console&quot;: {
+&quot;prefix&quot;: &quot;log&quot;,
+&quot;body&quot;: [
+&quot;console.log('$1');&quot;,
+&quot;$2&quot; ],
+&quot;description&quot;: &quot;Log output to console&quot; }
+}
+React示列</p> <pre><code>&quot;Print to console&quot;: {
+	&quot;prefix&quot;: &quot;initreact&quot;,
+	&quot;body&quot;: [
+		&quot;import React, { Component, Fragment } from 'react';&quot;,
+		&quot;&quot;,
+		&quot;class $1 extends Component {&quot;,
+		&quot;  constructor(props) {&quot;,
+		&quot;    super(props);&quot;,
+		&quot;  }&quot;,
+		&quot;&quot;,
+		&quot;  render() {&quot;,
+		&quot;    return(&quot;,
+		&quot;      &lt;Fragment&gt;&quot;,
+		&quot;      &lt;/Fragment&gt;&quot;,
+		&quot;    )&quot;,
+		&quot;  }&quot;,
+		&quot;}&quot;,
+		&quot;&quot;,
+		&quot;export default $2&quot;
+	],
+	&quot;description&quot;: &quot;React initial Template&quot;
+}
+</code></pre> <h4 id="_3-log输入完后，按tab切换-1位置"><a href="#_3-log输入完后，按tab切换-1位置" class="header-anchor">#</a> 3.log输入完后，按tab切换$1位置</h4> <h2 id="code命令行使用"><a href="#code命令行使用" class="header-anchor">#</a> code命令行使用</h2> <h3 id="_1-安装code"><a href="#_1-安装code" class="header-anchor">#</a> 1.安装code</h3> <p>在 PATH 中安装 “Code” 命令 并执行，然后重启终 端模拟就可以了。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>code --help     //获取帮助
+code -r         //打开code
+code .          //打开当前文件
+code -r -g package.json:2   //打开当前文件，那个文件并且第几行
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>code -r -d a.txt b.txt      //文件对比
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="我的配置"><a href="#我的配置" class="header-anchor">#</a> 我的配置</h2> <h3 id="vs-code配置"><a href="#vs-code配置" class="header-anchor">#</a> VS Code配置</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;files.exclude&quot;: {
+    &quot;node_modules/&quot;: false
+  },
+  &quot;workbench.colorTheme&quot;: &quot;Quiet Light&quot;,
+  &quot;editor.renderWhitespace&quot;: &quot;all&quot;,
+  &quot;editor.renderIndentGuides&quot;: false,
+  &quot;editor.minimap.enabled&quot;: false,
+  &quot;editor.detectIndentation&quot;: false,
+  &quot;editor.tabSize&quot;: 2,
+  &quot;editor.formatOnSave&quot;: true,
+  &quot;editor.lineNumbers&quot;: &quot;relative&quot;,
+  &quot;editor.rulers&quot;: [
+    100
+  ],
+  &quot;editor.renderLineHighlight&quot;: &quot;all&quot;,
+  &quot;javascript.updateImportsOnFileMove.enabled&quot;: &quot;always&quot;,
+  &quot;git.autofetch&quot;: true,
+  &quot;gitlens.advanced.messages&quot;: {
+    &quot;suppressSupportGitLensNotification&quot;: true
+  },
+  &quot;files.associations&quot;: {
+    &quot;*.wpy&quot;: &quot;vue&quot;,
+    &quot;*.vue&quot;: &quot;vue&quot;,
+    &quot;*.wxss&quot;: &quot;css&quot;,
+    &quot;*.wxs&quot;: &quot;javascript&quot;,
+    &quot;*.tpl&quot;: &quot;html&quot;
+  },
+  &quot;eslint.autoFixOnSave&quot;: true,
+  &quot;liveServer.settings.port&quot;: 8888,
+  &quot;liveServer.settings.donotShowInfoMsg&quot;: true,
+  // // vetur 配置
+  // &quot;vetur.validation.template&quot;: false,
+  // // 使用 VSCode 自带程序格式化 JS 文件
+  // &quot;vetur.format.defaultFormatter.js&quot;: &quot;vscode-typescript&quot;,
+  // // 使用 js-beautify-html 格式 HTML 模板
+  // &quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;,
+  // &quot;vetur.format.scriptInitialIndent&quot;: true,
+  // &quot;vetur.format.styleInitialIndent&quot;: true,
+  // // 格式 HTML 模板
+  // &quot;vetur.format.defaultFormatterOptions&quot;: {
+  //   &quot;js-beautify-html&quot;: {
+  //     // tag 属性对齐
+  //     &quot;wrap_attributes&quot;: &quot;force-aligned&quot;
+  //   }
+  // }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Men-HuLu/blog/edit/master/docs/tool/vscode快捷使用教程.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">更新于: </span> <span class="time">2020-7-28 5:35:17 ├F10: PM┤</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/docs/tool/npm使用教程.html" class="prev">
+          npm使用教程
+        </a></span> <span class="next"><a href="/docs/tool/eslint配置.html">
+          react eslint配置
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.87a322b1.js" defer></script><script src="/assets/js/2.d49b05b3.js" defer></script><script src="/assets/js/59.d8fecfdc.js" defer></script>
+  </body>
+</html>

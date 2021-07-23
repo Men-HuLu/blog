@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.ES6的基本类型 | 闷葫芦博客</title>
+    <meta name="description" content="茫茫人海,有缘相识,欢迎到此">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.38a317da.css" as="style"><link rel="preload" href="/assets/js/app.87a322b1.js" as="script"><link rel="preload" href="/assets/js/2.d49b05b3.js" as="script"><link rel="preload" href="/assets/js/22.70afba08.js" as="script"><link rel="prefetch" href="/assets/js/10.3c6b06f7.js"><link rel="prefetch" href="/assets/js/11.c3f672e1.js"><link rel="prefetch" href="/assets/js/12.d64ecb25.js"><link rel="prefetch" href="/assets/js/13.63290cce.js"><link rel="prefetch" href="/assets/js/14.92265d00.js"><link rel="prefetch" href="/assets/js/15.22f2cbad.js"><link rel="prefetch" href="/assets/js/16.5b3a51bf.js"><link rel="prefetch" href="/assets/js/17.ce8f0260.js"><link rel="prefetch" href="/assets/js/18.b07a3881.js"><link rel="prefetch" href="/assets/js/19.fbd3b021.js"><link rel="prefetch" href="/assets/js/20.b60583b7.js"><link rel="prefetch" href="/assets/js/21.50d01f64.js"><link rel="prefetch" href="/assets/js/23.14c94791.js"><link rel="prefetch" href="/assets/js/24.7669f837.js"><link rel="prefetch" href="/assets/js/25.938e1652.js"><link rel="prefetch" href="/assets/js/26.4e454bc5.js"><link rel="prefetch" href="/assets/js/27.9ad5757c.js"><link rel="prefetch" href="/assets/js/28.6ffa7297.js"><link rel="prefetch" href="/assets/js/29.0c9e9fdf.js"><link rel="prefetch" href="/assets/js/3.6c0414e3.js"><link rel="prefetch" href="/assets/js/30.752299e6.js"><link rel="prefetch" href="/assets/js/31.56a062e2.js"><link rel="prefetch" href="/assets/js/32.0e996dfd.js"><link rel="prefetch" href="/assets/js/33.f1e818ed.js"><link rel="prefetch" href="/assets/js/34.ee11a92d.js"><link rel="prefetch" href="/assets/js/35.c072d6f7.js"><link rel="prefetch" href="/assets/js/36.125fcdf6.js"><link rel="prefetch" href="/assets/js/37.205964b3.js"><link rel="prefetch" href="/assets/js/38.6f7a602a.js"><link rel="prefetch" href="/assets/js/39.d96471e2.js"><link rel="prefetch" href="/assets/js/4.4a8ff4f7.js"><link rel="prefetch" href="/assets/js/40.0b3f38f0.js"><link rel="prefetch" href="/assets/js/41.5dd8ebd3.js"><link rel="prefetch" href="/assets/js/42.c36e7ea9.js"><link rel="prefetch" href="/assets/js/43.b970100a.js"><link rel="prefetch" href="/assets/js/44.2df2e8a7.js"><link rel="prefetch" href="/assets/js/45.3fdc4bd4.js"><link rel="prefetch" href="/assets/js/46.8899ed27.js"><link rel="prefetch" href="/assets/js/47.5ca55e66.js"><link rel="prefetch" href="/assets/js/48.13794bb4.js"><link rel="prefetch" href="/assets/js/49.9039d70b.js"><link rel="prefetch" href="/assets/js/5.c37b41af.js"><link rel="prefetch" href="/assets/js/50.b82eb16e.js"><link rel="prefetch" href="/assets/js/51.d9ce7e9b.js"><link rel="prefetch" href="/assets/js/52.86c21c84.js"><link rel="prefetch" href="/assets/js/53.f93b2620.js"><link rel="prefetch" href="/assets/js/54.846c3b5b.js"><link rel="prefetch" href="/assets/js/55.81fa36a9.js"><link rel="prefetch" href="/assets/js/56.25163bc0.js"><link rel="prefetch" href="/assets/js/57.4e8219e8.js"><link rel="prefetch" href="/assets/js/58.690e50e6.js"><link rel="prefetch" href="/assets/js/59.d8fecfdc.js"><link rel="prefetch" href="/assets/js/6.1f463e4f.js"><link rel="prefetch" href="/assets/js/60.86850449.js"><link rel="prefetch" href="/assets/js/7.c982c2e1.js"><link rel="prefetch" href="/assets/js/8.8b9e487b.js"><link rel="prefetch" href="/assets/js/9.ee423eaf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.38a317da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">闷葫芦博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/framework/架构是什么.html" class="nav-link">架构篇</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Linux</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/linux/1.linux入门及帮助.html" class="nav-link">Linux基础</a></li><li class="dropdown-item"><!----> <a href="/docs/elastic/1.Elasticsearch安装及使用.html" class="nav-link">ELK日志分析系统</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C从入门到入土</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/net/类的构造和特性.html" class="nav-link">c#语法</a></li><li class="dropdown-item"><h4>asp.net core</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/efcore/创建EF步骤.html" class="nav-link">EF创建</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端进阶</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/css/css选择器和属性.html" class="nav-link">CSS样式</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/ES6的基本类型.html" class="nav-link">ES6进阶</a></li><li class="dropdown-item"><h4>开发利器</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tool/git使用教程.html" class="nav-link">git</a></li><li class="dropdown-subitem"><a href="/docs/tool/vscode快捷使用教程.html" class="nav-link">vscode</a></li><li class="dropdown-subitem"><a href="/docs/tool/npm使用教程.html" class="nav-link">npm</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/notes/刻意练习.html" class="nav-link">读书笔记</a></div> <a href="https://github.com/Men-HuLu/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/javascript/ES6的基本类型.html" class="active sidebar-link">1.ES6的基本类型</a></li><li><a href="/docs/javascript/面对对象和基于对象.html" class="sidebar-link">2.面对对象和基于对象</a></li><li><a href="/docs/javascript/基于对象深入——原型.html" class="sidebar-link">3.基于对象深入——原型</a></li><li><a href="/docs/javascript/对象分类.html" class="sidebar-link">4.对象分类</a></li><li><a href="/docs/javascript/宏观任务与微观任务.html" class="sidebar-link">5.宏观任务与微观任务</a></li><li><a href="/docs/javascript/JS执行上下文和闭包.html" class="sidebar-link">6.JS执行上下文和闭包</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p><strong>ES有7种语言类型:</strong></p> <ol><li>Undefined</li> <li>Null</li> <li>String</li> <li>Number</li> <li>Boolean</li> <li>Symbol（es6）</li> <li>Object</li></ol> <p><strong>1-6为值类型,7为引用类型</strong></p> <h5 id="_1-undefined"><a href="#_1-undefined" class="header-anchor">#</a> 1.undefined</h5> <h5 id="_2-null"><a href="#_2-null" class="header-anchor">#</a> 2.null</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>undefined是变量,不是关键字
+let undefined=1
+let a=undefined
+let b=void 0    //通常用void 0代替undefined
+console.log(a)  //输出1,
+
+let null=1  //是不允许的，null是关键字
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h5 id="_3-string"><a href="#_3-string" class="header-anchor">#</a> 3.String</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>String 有最大长度是 2^53 - 1
+\uxxxx形式表示一个字符
+let a=&quot;\u0061&quot;  //16位,
+console.log(a)  //输出a
+
+JavaScript 字符串把每个 UTF16 单元当作一个字符来处理
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h5 id="_4-number"><a href="#_4-number" class="header-anchor">#</a> 4.Number</h5> <ol><li>NAN 非数值</li> <li>-Infinity 负无穷大</li> <li>Infinity 正无穷大</li> <li>js中有+0和-0</li></ol> <p>Number 类型中有效的整数范围是 -0x1fffffffffffff 至 0x1fffffffffffff</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//判断是+0还是-0
+console.log(1/-0===-Infinity)
+//浮点数判断
+console.log( 0.1 + 0.2 == 0.3)                                  //false
+console.log( Math.abs(0.1 + 0.2 - 0.3) &lt;= Number.EPSILON);      //true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="_5-boolean"><a href="#_5-boolean" class="header-anchor">#</a> 5.Boolean</h5> <h5 id="_6-symbol"><a href="#_6-symbol" class="header-anchor">#</a> 6.Symbol</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>//创建
+var mySymbol = Symbol(&quot;my symbol&quot;);
+
+//for的语法糖
+var o = new Object
+
+o[Symbol.iterator] = function () {
+  var v = 0
+  return {
+    next: function () {
+      return { value: v++, done: v &gt; 10 }
+    }
+  }
+};
+
+for (var v of o)
+{
+      console.log(v); // 0 1 2 3 ... 9
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h6 id="_7-object"><a href="#_7-object" class="header-anchor">#</a> 7.Object</h6> <ol><li>Object 是 JavaScript 中最复杂的类型。</li> <li>对象的定义是“属性的集合”。属性分为数据属性和访问器属性，二者都是 key-value 结构，key 可以是字符串或者 Symbol 类型。</li> <li>C++ 和 Java,每个类都是一个类型。JavaScript中的“类”仅仅是运行时对象的一个私有属性，而 JavaScript 中是无法自定义类型的。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>let a=1                 //Number类型
+let b=new Number(1)     //object类型
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h5 id="_8-类型转换"><a href="#_8-类型转换" class="header-anchor">#</a> 8.类型转换</h5> <p>== 会跨类型转换,建议用===
+<img src="https://yuminjun-1257115713.cos.ap-shanghai.myqcloud.com/blog/js%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.jpg" alt="image"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>stringtoNumber
+1.使用Number
+let a=[&quot;30&quot;,&quot;0b111&quot;,&quot;0o13&quot;,&quot;0xff&quot;]
+for(let b of a)
+{
+    console.log(Number(b))
+}
+//结果30,7,11,255
+也支持1e3，1e-2科学计数法
+
+2.使用parseInt，只支持原字符和0x开头
+let a=[&quot;30&quot;,&quot;0b111&quot;,&quot;0o13&quot;,&quot;0xff&quot;]
+for(let b of a)
+{
+    console.log(parseInt(b))
+}
+//结果30,0,0,255
+
+3.只支持原字符
+let a=[&quot;30&quot;,&quot;0b111&quot;,&quot;0o13&quot;,&quot;0xff&quot;]
+for(let b of a)
+{
+    console.log(parseFloat(b))
+}
+//结果30,0,0,0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h5 id="装箱转换"><a href="#装箱转换" class="header-anchor">#</a> 装箱转换</h5> <p>每一种基本类型 Number、String、BooleanSymbol 在对象中都有对应的类，所谓装箱转换，正是把基本类型转换为对应的对象，它是类型转换中一种相当重要的种类。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Symbol无法new,但也可以转换为对象
+1.call强制转换
+var symbolObject = (function () { return this; }).call(Symbol(&quot;a&quot;));
+console.log(typeof symbolObject); //object
+console.log(symbolObject instanceof Symbol); //true
+console.log(symbolObject.constructor == Symbol); //true
+
+2.Object转换
+var symbolObject = Object(Symbol(&quot;a&quot;));
+console.log(typeof symbolObject); //object
+console.log(symbolObject instanceof Symbol); //true
+console.log(symbolObject.constructor == Symbol); //true
+
+3.装箱对象皆有私有的 Class 属性,Object.prototype.toString 获取：
+var symbolObject = Object(Symbol(&quot;a&quot;));
+console.log(Object.prototype.toString.call(symbolObject)); //[object Symbol]
+可以使用typeof做对比
+console.log(Object.prototype.toString.call(null));//[object Null]
+console.log(typeof null);//object
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h5 id="拆箱转换"><a href="#拆箱转换" class="header-anchor">#</a> 拆箱转换</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.Number
+var o = {
+    valueOf : () =&gt; {console.log(&quot;valueOf&quot;); return {}},
+    toString : () =&gt; {console.log(&quot;toString&quot;); return {}}
+}
+
+o * 2
+// valueOf
+// toString
+// TypeError
+
+2.String
+var o = {
+    valueOf : () =&gt; {console.log(&quot;valueOf&quot;); return {}},
+    toString : () =&gt; {console.log(&quot;toString&quot;); return {}}
+}
+
+String(o)
+// toString
+// valueOf
+// TypeError
+
+3.es6之后
+var o = {
+    valueOf : () =&gt; {console.log(&quot;valueOf&quot;); return {}},
+    toString : () =&gt; {console.log(&quot;toString&quot;); return {}}
+}
+o[Symbol.toPrimitive] = () =&gt; {console.log(&quot;toPrimitive&quot;); return &quot;hello&quot;}
+
+console.log(o + &quot;&quot;)
+// toPrimitive
+// hello
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h5 id="运行时类型"><a href="#运行时类型" class="header-anchor">#</a> 运行时类型</h5> <table><thead><tr><th>示例</th> <th>typeof</th> <th>运行时类型</th></tr></thead> <tbody><tr><td>null</td> <td>object</td> <td>Null</td></tr> <tr><td>{}</td> <td>object</td> <td>Object</td></tr> <tr><td>(function(){})</td> <td>function</td> <td>Object</td></tr> <tr><td>3</td> <td>number</td> <td>Number</td></tr> <tr><td>&quot;ok&quot;</td> <td>string</td> <td>String</td></tr> <tr><td>true</td> <td>boolean</td> <td>Boolean</td></tr> <tr><td>void 0</td> <td>undefined</td> <td>Undefined</td></tr> <tr><td>Symbol(&quot;a&quot;)</td> <td>symbol</td> <td>Symbol</td></tr></tbody></table> <p>object——Null 和 function——Object是特例</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Men-HuLu/blog/edit/master/docs/javascript/ES6的基本类型.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">更新于: </span> <span class="time">2020-4-14 3:37:02 ├F10: PM┤</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docs/javascript/面对对象和基于对象.html">
+          2.面对对象和基于对象
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.87a322b1.js" defer></script><script src="/assets/js/2.d49b05b3.js" defer></script><script src="/assets/js/22.70afba08.js" defer></script>
+  </body>
+</html>

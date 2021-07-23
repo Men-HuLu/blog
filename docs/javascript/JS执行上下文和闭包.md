@@ -104,4 +104,4 @@ void function(){
 
 ```
 这里推荐可以看
- [js执行机制 https://www.jianshu.com/p/cd3fee40ef59](https://www.jianshu.com/p/cd3fee40ef59)
+ [js执行机制 https://www.jianshu.com/nb/1479424](https://www.jianshu.com/nb/1479424)
